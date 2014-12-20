@@ -1,0 +1,146 @@
+body
+{
+    background: url("../img/full-bg.jpg") no-repeat fixed #000;
+    background-position-x: 50%;
+}
+
+body, html
+{
+    width:   100%;
+    margin:  0;
+    padding: 0;
+
+    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+    color:       ghostwhite;
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.clear-children:after,
+container > article > section ul li:after
+{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+container
+{
+    display: block;
+    width: 800px;
+    margin: 0 auto;
+}
+
+container > *
+{
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    margin: 1em 0;
+}
+
+container > header
+{
+    font-size: 2em;
+    font-family: 'Architects Daughter', cursive;
+    text-align: center;
+    padding: 1em 0;
+}
+
+container > header > .logo
+{
+    width: 75%;
+    margin: 0.5em 0;
+}
+
+container > article
+{
+    padding: 1em;
+}
+
+container > article h1
+{
+    border-bottom: 2px solid rgba(255,255,0,0.5);
+    padding-bottom: 0.2em;
+    text-shadow: 0 0 10px rgba(255,255,0,0.5);
+}
+
+container > article > section
+{
+    width: 33.3%;
+    padding: 1%;
+    float: left;
+}
+
+container > article > section h2
+{
+    font-size: 120%;
+    color: rgba(255,255,255,0.8);
+    padding: 0.5em 0;
+    transition: color 0.5s, text-shadow 0.5s;
+}
+
+container > article > section:hover h2
+{
+    color: white;
+    text-shadow: 0 0 10px rgba(255,255,0,0.5);
+}
+
+container > article > section ul
+{
+    list-style: none;
+}
+
+container > article > section ul li
+{
+    margin: 0.5em 0;
+}
+
+container > article > section ul field,
+container > article > section ul value
+{
+    font-size: 80%;
+}
+
+container > article > section ul field
+{
+    color: rgba(255,255,255,0.5);
+    float: left;
+}
+
+container > article > section ul value
+{
+    font-family: Consolas, monospace;
+    float: right;
+}
+
+container > article > section .button,
+container > article > section .button:visited
+{
+    color: rgb(255,255,200);
+}
+
+container > article > section .button,
+container > article > section .button:active
+{
+    text-decoration: none;
+    display: block;
+    background: black;
+    padding: 1em;
+    font-weight: bold;
+    font-size: 80%;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+container > article > section .button:hover
+{
+    background: rgb(255,255,0);
+    color: black;
+}

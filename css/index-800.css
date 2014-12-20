@@ -1,0 +1,90 @@
+container
+{
+    display: block;
+    width: 100%;
+}
+
+container > *
+{
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 0;
+    margin: 0;
+}
+
+container > header
+{
+    font-size: 1.5em;
+    padding: 0.5em 0;
+}
+
+container > header > .logo
+{
+    margin: 0.2em 0;
+}
+
+container > article
+{
+    padding: 0;
+}
+
+container > article h1
+{
+    padding: 0.2em 0.5em;
+}
+
+container > article > section
+{
+    width: 100%;
+    padding: 1em;
+    float: none;
+}
+
+container > article > section:nth-child(even)
+{
+    background: rgba(0, 0, 0, 0.4);
+}
+
+container > article > section h2
+{
+    padding-top: 0;
+}
+
+container > article > section ul li
+{
+    margin: 0.5em 0;
+}
+
+container > article > section ul field,
+container > article > section ul value
+{
+    font-size: 100%;
+}
+
+container > article > section ul field
+{
+    color: rgba(255,255,255,0.5);
+    float: left;
+}
+
+container > article > section ul value
+{
+    font-family: Consolas, monospace;
+    float: right;
+}
+
+container > article > section .button,
+container > article > section .button:visited
+{
+    color: rgb(255,255,200);
+}
+
+container > article > section .button,
+container > article > section .button:active
+{
+    border-radius: 0px;
+}
+container > article > section .button:hover
+{
+    background: rgb(255,255,0);
+    color: black;
+}
