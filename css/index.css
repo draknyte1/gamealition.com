@@ -144,3 +144,15 @@ container > article > section .button:hover
     background: rgb(255,255,0);
     color: black;
 }
+
+/* Alerts */
+
+container > article.alert > section
+{
+    width: 100%;
+}
+
+container > article.alert > section p
+{
+    margin-bottom: 1em;
+}
