@@ -21,6 +21,9 @@ body, html
     box-sizing: border-box;
 }
 
+.col-4 { width: 33.3%; }
+.col-6 { width: 50%;   }
+
 .clear-children:after,
 container > article > section ul li:after
 {
@@ -60,7 +63,8 @@ container > header > .logo
     margin: 0.5em 0;
 }
 
-container > article
+container > article,
+container > article > p
 {
     padding: 1em;
 }
@@ -74,7 +78,6 @@ container > article h1
 
 container > article > section
 {
-    width: 33.3%;
     padding: 1%;
     float: left;
 }
@@ -143,16 +146,4 @@ container > article > section .button:hover
 {
     background: rgb(255,255,0);
     color: black;
-}
-
-/* Alerts */
-
-container > article.alert > section
-{
-    width: 100%;
-}
-
-container > article.alert > section p
-{
-    margin-bottom: 1em;
 }
