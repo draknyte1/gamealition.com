@@ -11,6 +11,7 @@
 
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/logo.css">
+  <link rel="stylesheet" href="css/panorama.css">
   <link rel="stylesheet" media="(max-width: 800px)" href="css/index-800.css" />
   <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed|Ubuntu' type='text/css'>
 
@@ -51,11 +52,66 @@
   </header>
 
   <section>
+    <container>
+      <h1>We are Gamealition</h1>
 
+      <p>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+        explicabo.
+      </p>
+    </container>
+  </section>
+
+  <section>
+    <panorama id="pano-survival" data-src="img/survival/pano-1.jpg"></panorama>
+  </section>
+
+  <section>
+    <container>
+      <h1>Second section</h1>
+
+      <p>
+        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+        fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
+        sequi nesciunt.
+      </p>
+    </container>
+  </section>
+
+  <section>
+    <!-- Courtesy of http://stackoverflow.com/a/22567753/3354920 -->
+    <div class="map-overlay" onClick="style.pointerEvents='none'"></div>
+    <iframe class="map" src="http://survival.gamealition.com:8123/?nogui=true&zoom=4&mapname=surface"></iframe>
+  </section>
+
+  <section>
+    <container>
+      <h1>Third section</h1>
+
+      <p>
+        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+        fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
+        sequi nesciunt.
+      </p>
+    </container>
   </section>
 
   <footer>
 
   </footer>
 </body>
+
+<scripts>
+  <script src="js/panorama.js" type="application/javascript"></script>
+
+  <script type="application/javascript">
+    Panorama.create("pano-survival", [
+      ["img/survival/pano-1.jpg", 2145, 400]
+    ]);
+
+    Panorama.loop();
+  </script>
+</scripts>
 </html>
