@@ -1,0 +1,35 @@
+logo
+{
+    position:     relative;
+    width:        128px;
+    height:       128px;
+    float:        left;
+    margin-right: 1em;
+}
+
+logo > img
+{
+    position: absolute;
+    width:    128px;
+}
+
+logo > img:nth-child(2)
+{
+    animation-duration: 3s;
+    animation-name:     pulse;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes pulse
+{
+    from
+    {
+        opacity: 1;
+    }
+
+    to
+    {
+        opacity: 0;
+    }
+}
