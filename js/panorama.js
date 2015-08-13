@@ -20,6 +20,8 @@ Panorama.create = function(id, images)
     pano.current = images[0];
     pano.grabbed = false;
     pano.energy  = -1;
+    pano.scroll  = 0;
+    pano.lastX   = 0;
 
     pano.draw = function()
     {
@@ -30,23 +32,24 @@ Panorama.create = function(id, images)
 
         if (pano.grabbed) return;
 
-        var posX = parseInt(element.style.backgroundPositionX) + pano.energy;
+        pano.scroll += pano.energy;
 
-        if (posX < pano.current[1] * -1)
-            posX = 0;
+        if (pano.scroll < pano.current[1] * -1)
+            pano.scroll = 0;
 
-        element.style.backgroundPositionX = posX + "px";
+        element.style.backgroundPosition = pano.scroll + "px 0";
     };
 
     var firstImage = images[0];
 
-    element.style.backgroundImage     = "url(" + firstImage[0] + ")";
-    element.style.backgroundRepeat    = "repeat-x";
-    element.style.backgroundPositionX = "0px";
+    element.style.backgroundImage    = "url(" + firstImage[0] + ")";
+    element.style.backgroundRepeat   = "repeat-x";
+    element.style.backgroundPosition = "0px 0px";
 
     element.onmousedown = function(e)
     {
         pano.grabbed = true;
+        pano.lastX   = e.clientX;
     };
 
     element.onmouseup = function(e)
@@ -63,9 +66,12 @@ Panorama.create = function(id, images)
     {
         if (!pano.grabbed) return;
 
-        var posX = parseInt(this.style.backgroundPositionX);
-        pano.energy = e.movementX;
-        this.style.backgroundPositionX = (posX + e.movementX) + "px";
+        var delta = e.clientX - pano.lastX;
+
+        pano.energy  = delta;
+        pano.scroll += delta;
+        pano.lastX   = e.clientX;
+        pano.element.style.backgroundPosition = pano.scroll + "px 0";
     };
 
     console.log("Created panorama", pano);
