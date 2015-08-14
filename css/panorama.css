@@ -1,7 +1,58 @@
 panorama
 {
-    display: block;
+    display: flex;
     height: 400px;
     background: ghostwhite;
     cursor: move;
+
+    align-items: flex-end;
+}
+
+panorama pano
+{
+    display: none;
+}
+
+panorama > container,
+panorama > container button
+{
+    color: #d5f6ff;
+    text-shadow: 0 2px #00222b;
+}
+
+panorama > container:hover,
+panorama > container:hover button
+{
+    background: ghostwhite;
+    color: #00222b;
+    text-shadow: none;
+
+}
+
+panorama > container button
+{
+    background: none;
+    border: none;
+    font-size: xx-large;
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+panorama > container button:hover
+{
+    background: #d5f6ff;
+}
+
+panorama > container .title
+{
+    font-size: xx-large;
+}
+
+panorama > container .subtitle:before
+{
+    content: "by ";
+    padding-right: 4px;
+    font-style: italic;
+    font-size: small;
 }

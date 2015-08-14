@@ -23,6 +23,17 @@ body, html
 .col-4 { width: 33.3%; }
 .col-6 { width: 50%;   }
 
+/* http://stackoverflow.com/a/4407335/3354920 */
+.noselect
+{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 container
 {
     display: block;
