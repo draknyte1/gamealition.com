@@ -83,7 +83,7 @@
             title="Oxbridge" subtitle="Robrotheram"></slide>
 
       <container class="noselect">
-        <button>&#x2770;</button><button>&#x2771;</button>
+        <button prev>&#x2770;</button><button next>&#x2771;</button>
         <span class="title">Title</span>
         <span class="subtitle">Subtitle</span>
       </container>
@@ -126,13 +126,11 @@
 </body>
 
 <scripts>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
   <script src="js/panorama.js" type="application/javascript"></script>
 
   <script type="application/javascript">
-    Panorama.create("pano-survival", [
-      ["img/survival/pano-1.jpg", 2145, 400]
-    ]);
-
+    Panorama.create("#pano-survival");
     Panorama.loop();
   </script>
 </scripts>
