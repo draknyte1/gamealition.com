@@ -29,7 +29,6 @@ body, html
 {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
-    -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -129,11 +128,10 @@ body > section:last-of-type
 
 body > footer
 {
-    background:      #00222b url("../img/footer-bg.png") no-repeat;
-    background-size: contain;
+    background: #00222b url("../img/footer-bg.png") repeat-x center top;
 
-    min-height:     200px;
-    padding-top:    200px;
+    min-height:  200px;
+    padding-top: 200px;
 }
 
 body > footer > container
@@ -144,8 +142,7 @@ body > footer > container
 
 body > footer > container > div
 {
-    padding: 16px;
-    padding-bottom: 0px;
+    padding: 16px 16px 0;
     color:   #006680;
 }
 
@@ -156,13 +153,13 @@ body > footer > container p
     font-size:     16px;
 }
 
-body > footer > container .links
+body > footer > container #links
 {
     display: flex;
     flex-wrap: wrap;
 }
 
-body > footer > container .links > div
+body > footer > container #links > div
 {
     width: 50%;
     margin-bottom: 16px;
