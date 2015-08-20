@@ -1,4 +1,4 @@
-This license applies to all assets in this repository except for assets that
+This license applies to all assets in this repository *except* for assets that
 represent the Gamealition brand (e.g. all logo and icon files).
 
 Instead, see `LICENSE-LOGO.md` for what those are licensed as.
