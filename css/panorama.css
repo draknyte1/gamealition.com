@@ -2,7 +2,7 @@ panorama
 {
     display: flex;
     height: 400px;
-    background: ghostwhite;
+    background: #00222b;
     cursor: move;
 
     align-items: flex-end;

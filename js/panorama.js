@@ -94,17 +94,18 @@ Panorama.create = function(id)
         pano.element.style.backgroundPosition = pano.scroll + "px 0";
     };
 
-    var jquery = pano.jquery;
+    var jquery  = pano.jquery,
+        element = pano.element;
 
-    jquery.bind("mousedown",   pano.onInputDown);
-    jquery.bind("mouseup",     pano.onInputUpOrOut);
-    jquery.bind("mouseout",    pano.onInputUpOrOut);
-    jquery.bind("mousemove",   pano.onInputMove);
-    jquery.bind("touchstart",  pano.onInputDown);
-    jquery.bind("touchend",    pano.onInputUpOrOut);
-    jquery.bind("touchleave",  pano.onInputUpOrOut);
-    jquery.bind("touchcancel", pano.onInputUpOrOut);
-    jquery.bind("touchmove",   pano.onInputMove);
+    element.addEventListener("mousedown",   pano.onInputDown);
+    element.addEventListener("mouseup",     pano.onInputUpOrOut);
+    element.addEventListener("mouseout",    pano.onInputUpOrOut);
+    element.addEventListener("mousemove",   pano.onInputMove);
+    element.addEventListener("touchstart",  pano.onInputDown);
+    element.addEventListener("touchend",    pano.onInputUpOrOut);
+    element.addEventListener("touchleave",  pano.onInputUpOrOut);
+    element.addEventListener("touchcancel", pano.onInputUpOrOut);
+    element.addEventListener("touchmove",   pano.onInputMove);
 
     jquery.find("button[prev]").click( function() { pano.changeBy(-1); } );
     jquery.find("button[next]").click( function() { pano.changeBy(1);  } );
