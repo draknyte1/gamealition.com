@@ -1,3 +1,8 @@
+/*
+ * 360 Panoramas by Roy Curtis
+ * Licensed under MIT, 2015
+ */
+
 var Panorama = {};
 
 Panorama.panos = [];

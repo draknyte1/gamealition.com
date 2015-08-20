@@ -81,44 +81,84 @@ body > section
 {
     clear: both;
     background: #d5f6ff;
-    margin: 32px 0;
+    margin: 16px 0;
     overflow: hidden;
 }
 
 body > section > container h1
 {
     color: #00ccff;
-    margin: 16px;
     font-size: xx-large;
 }
 
 body > section > container p
 {
-    margin: 16px;
+    padding-top: 16px;
 }
 
-body > section .map
+body > section > container > section
 {
-    border: none;
-    width: 100%;
-    height: 400px;
+    float: left;
+    padding: 16px;
 }
 
-body > section .map-overlay
+body > section > container entry
 {
-    background:  transparent;
-    position:    relative;
-    width:       100%;
-    height:      400px;
-    top:         480px;
-    margin-top: -480px;
-    cursor: pointer;
+    display: block;
+    clear: both;
 }
 
-body > section .map-overlay:hover
+body > section > container field
 {
-    background: #d5f6ff;
-    opacity:    0.2;
+    color: #00ccff;
+}
+
+body > section > container value
+{
+    float: right;
+    font-family: 'Consolas', monospace;
+    font-size: medium;
+}
+
+body > section > container menu
+{
+    margin: 8px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body > section > container menu > a
+{
+    margin:  4px 8px 4px 0;
+    padding: 8px;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    background: ghostwhite;
+    color: #00ccff;
+}
+
+body > section > container menu > a:hover
+{
+    color: ghostwhite;
+    background: #00ccff;
+}
+
+body > section > container menu > a:active
+{
+    background: ghostwhite;
+    color: #00ccff;
+}
+
+body > section > container::after,
+body > section > container menu > entry::after
+{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
 }
 
 body > section:last-of-type
@@ -131,59 +171,25 @@ body > footer
     background: #00222b url("../img/footer-bg.png") repeat-x center top;
 
     min-height:  200px;
-    padding-top: 200px;
-}
-
-body > footer > container
-{
-    display:     flex;
-    align-items: flex-start;
-}
-
-body > footer > container > div
-{
-    padding: 16px 16px 0;
-    color:   #006680;
+    padding-top: 216px;
+    padding-bottom: 16px;
 }
 
 body > footer > container p
 {
-    margin-bottom: 16px;
-    text-align:    justify;
-    font-size:     16px;
-}
-
-body > footer > container #links
-{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-body > footer > container #links > div
-{
-    width: 50%;
-    margin-bottom: 16px;
-}
-
-body > footer > container menu > a
-{
-    text-decoration: none;
-    color: #00ccff;
-    font-size: 16px;
-}
-
-body > footer > container menu > a:hover
-{
-    border-bottom: 2px solid #00ccff;
-}
-
-body > footer > container menu > a:after
-{
-    content: " \2022";
     color:   #006680;
+    text-align: center;
+    font-size:  16px;
+    padding: 8px 0;
 }
 
-body > footer > container menu > a:last-of-type:after
+body > footer > container a
 {
-    content: "";
+    color: #00ccff;
+    text-decoration: none;
+}
+
+body > footer > container a:hover
+{
+    color: ghostwhite;
 }

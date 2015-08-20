@@ -37,32 +37,51 @@
 <body>
   <header>
     <container>
-      <logo>
+      <logo title="We are Gamealition. We host and play games.">
         <img src="img/logo-diffuse.png"/>
         <img src="img/logo-bloom.png"/>
         <img src="img/logo-specular.png"/>
-        <h1>Gamealition</h1>
       </logo>
 
       <menu>
-        <a href="#">Survival</a>
-        <a href="#">Direwolf20</a>
-        <a href="#">ARK</a>
-        <a href="#">Social</a>
+        <a href="#Survival">Survival</a>
+        <a href="#Direwolf20">Direwolf20</a>
+        <a href="#ARK">ARK</a>
+        <a href="#Social">Social</a>
       </menu>
     </container>
   </header>
 
-  <section>
+  <section id="Survival">
     <container>
-      <h1>We are Gamealition</h1>
+      <section class="col-6">
+        <h1>Survival 1.8</h1>
 
-      <p>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo.
-      </p>
+        <p>
+          Established in July 2014, our family-friendly semi-vanilla Survival
+          community has been going strong with fantastic builds by incredible
+          players, young and old.
+        </p>
+
+        <p>
+          We run a tight ship and a friendly community. We don't spoil the
+          experience with paid ranks, vote begging and complicated plugins.
+        </p>
+      </section>
+
+      <section class="col-6">
+        <entry>
+          <field>Address</field> <value>gamealition.com</value>
+        </entry>
+
+        <menu>
+          <a href="http://survival.gamealition.com/rules">Rules</a>
+          <a href="http://survival.gamealition.com/dynmap">Live Map</a>
+          <a href="http://survival.gamealition.com/forums">Sub-Forum</a>
+          <a href="http://survival.gamealition.com/features">Features</a>
+          <a href="http://survival.gamealition.com/bugs">Known Issues</a>
+        </menu>
+      </section>
     </container>
   </section>
 
@@ -93,96 +112,124 @@
     </panorama>
   </section>
 
-  <section>
+  <section id="Direwolf20">
     <container>
-      <h1>Second section</h1>
+      <section class="col-6">
+        <h1>Direwolf20 1.7.10</h1>
 
-      <p>
-        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-        fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
-        sequi nesciunt.
-      </p>
+        <p>
+          Only for our trusted players, our Feed-The-Beast server has been
+          around since December 2014.
+        </p>
+
+        <p>
+          We keep it well maintained and optimal, whilst still allowing our
+          players to push the boundaries of machine and magic.
+        </p>
+      </section>
+
+      <section class="col-6">
+        <entry>
+          <field>Address</field> <value>ftb.gamealition.com</value>
+        </entry>
+
+        <menu>
+          <a href="http://ftb.gamealition.com/rules">Rules</a>
+          <a href="http://ftb.gamealition.com/apply">Apply</a>
+          <a href="http://ftb.gamealition.com/forums">Sub-Forum</a>
+          <a href="http://ftb.gamealition.com/bugs">Known Issues</a>
+        </menu>
+      </section>
     </container>
   </section>
 
-  <section>
-    <!-- Courtesy of http://stackoverflow.com/a/22567753/3354920 -->
-    <div class="map-overlay" onClick="style.pointerEvents='none'"></div>
-    <iframe class="map" src="http://survival.gamealition.com:8123/?nogui=true&zoom=4&mapname=surface"></iframe>
+  <section id="ARK">
+    <container>
+      <section class="col-6">
+        <h1>ARK: Survival Evolved</h1>
+      </section>
+
+      <section class="col-6">
+        <entry>
+          <field>Search term</field> <value>Gamealition</value>
+        </entry>
+
+        <menu>
+          <a href="http://forums.gamealition.com/viewtopic.php?f=13&t=170">Information</a>
+          <a href="http://forums.gamealition.com/viewforum.php?f=13">Sub-Forum</a>
+        </menu>
+      </section>
+    </container>
   </section>
 
-  <section>
+  <section id="Social">
     <container>
-      <h1>Third section</h1>
+      <section class="col-4">
+        <h1>Social</h1>
 
-      <p>
-        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-        fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
-        sequi nesciunt.
-      </p>
+        <menu>
+          <a class="button" href="http://forums.gamealition.com">Forums</a>
+          <a class="button" href="http://twitter.com/gamealition">Twitter</a>
+          <a class="button" href="http://steamcommunity.com/groups/gamealition">Steam</a>
+          <a class="button" href="http://github.com/gamealition">GitHub</a>
+          <a class="button" href="mailto:gamealition+homepage@gmail.com">Email</a>
+        </menu>
+      </section>
+
+      <section class="col-4">
+        <h1>IRC</h1>
+
+        <entry>
+          <field>Host</field> <value>irc.us.gamesurge.net</value>
+        </entry>
+
+        <entry>
+          <field>Channel</field> <value>#Gamealition</value>
+        </entry>
+
+        <menu>
+          <a class="button" href="http://irc.gamealition.com">Join us on IRC</a>
+        </menu>
+      </section>
+
+      <section class="col-4">
+        <h1>Mumble</h1>
+
+        <entry>
+          <field>Address</field> <value>gamealition.com</value>
+        </entry>
+
+        <entry>
+          <field>Port</field> <value>64738</value>
+        </entry>
+
+        <menu>
+          <a class="button" href="mumble://gamealition.com/">Join us on Mumble</a>
+        </menu>
+      </section>
     </container>
   </section>
 
   <footer>
     <container>
-      <div class="col-4">
+      <div>
         <p>
           Gamealition exists today thanks to the dedication of its staff, the
           creativity of its community and the generosity of its donators.
         </p>
 
         <p>
-          Content on this website is available under the MIT license except
-          where otherwise specified.
+          Content on this website is <a href="https://github.com/Gamealition/gamealition.com">available</a>
+          under the MIT license except where otherwise specified.
         </p>
       </div>
-
-      <div class="col-8" id="links">
-        <div>
-          <h3>Servers</h3>
-
-          <menu>
-            <a href="#">Survival</a>
-            <a href="#">Direwolf20</a>
-            <a href="#">Snapshot</a>
-            <a href="#">ARK</a>
-          </menu>
-        </div>
-
-        <div>
-          <h3>Social</h3>
-
-          <menu>
-            <a href="#">Forums</a>
-            <a href="#">Twitter</a>
-            <a href="#">Github</a>
-            <a href="#">Email</a>
-            <a href="#">IRC</a>
-            <a href="#">Mumble</a>
-            <a href="#">Steam</a>
-          </menu>
-        </div>
-
-        <div>
-          <h3>Locations</h3>
-
-          <menu>
-            <a href="#">Media</a>
-            <a href="#">TWiTCraft mirror</a>
-          </menu>
-        </div>
-
-        <div>
-          <img src="img/logo-footer.png" />
-        </div>
-      </div>
-
     </container>
   </footer>
 </body>
 
 <scripts>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+  <script src="js/index.js" type="application/javascript"></script>
   <script src="js/panorama.js" type="application/javascript"></script>
 
   <script type="application/javascript">
