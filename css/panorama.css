@@ -23,8 +23,7 @@ panorama > container button
 panorama > container:hover,
 panorama > container:hover button
 {
-    background: ghostwhite;
-    color: #00222b;
+    background: #00222b;
     text-shadow: none;
 
 }
@@ -41,7 +40,7 @@ panorama > container button
 
 panorama > container button:hover
 {
-    background: #d5f6ff;
+    background: #003f50;
 }
 
 panorama > container .title

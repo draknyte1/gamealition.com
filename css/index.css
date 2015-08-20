@@ -7,8 +7,8 @@ body, html
 
     font-family: 'Ubuntu Condensed', sans-serif;
     font-size:   20px;
-    background:  #d5f6ff;
-    color:       #00222b;
+    background:  #00222b;
+    color:       #d5f6ff;
 }
 
 *
@@ -46,7 +46,7 @@ container
 body > header
 {
     height: 90px;
-    background: ghostwhite;
+    background: #191919;
     margin-bottom: 75px;
 }
 
@@ -66,7 +66,7 @@ body > header menu
 body > header menu > a
 {
     display: inline-block;
-    color: #191919;
+    color: #00ccff;
     font-size: x-large;
     margin-right: 2%;
     text-decoration: none;
@@ -74,13 +74,12 @@ body > header menu > a
 
 body > header menu > a:hover
 {
-    border-bottom: 3px solid #d5f6ff;
+    border-bottom: 3px solid #00ccff;
 }
 
 body > section
 {
     clear: both;
-    background: #d5f6ff;
     margin: 16px 0;
     overflow: hidden;
 }
@@ -134,7 +133,7 @@ body > section > container menu > a
     text-decoration: none;
     display: inline-block;
     text-transform: uppercase;
-    background: ghostwhite;
+    background: #003f50;
     color: #00ccff;
 }
 
@@ -168,11 +167,10 @@ body > section:last-of-type
 
 body > footer
 {
-    background: #00222b url("../img/footer-bg.png") repeat-x center top;
+    background: #001116 url("../img/footer-bg.png") repeat-x center top;
 
     min-height:  200px;
-    padding-top: 216px;
-    padding-bottom: 16px;
+    padding: 216px 16px 16px;
 }
 
 body > footer > container p
