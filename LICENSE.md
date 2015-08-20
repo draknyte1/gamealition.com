@@ -1,3 +1,10 @@
+This license applies to all assets in this repository except for assets that
+represent the Gamealition brand (e.g. all logo and icon files).
+
+Instead, see `LICENSE-LOGO.md` for what those are licensed as.
+
+----
+
 The MIT License (MIT)
 
 Copyright (c) 2015 Roy Adrian Curtis
