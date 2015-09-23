@@ -1,8 +1,14 @@
+/**
+ * Gamealition Panorama theme by Roy Curtis, 2015
+ * Uses colors and gradients from the PBTech phpBB theme
+ * See: https://www.phpbb.com/customise/db/style/pbtech/
+ */
+
 panorama
 {
     display: flex;
     height: 400px;
-    background: #00222b;
+    background: #FFFFFF;
     cursor: move;
 
     align-items: flex-end;
@@ -16,16 +22,22 @@ panorama pano
 panorama > container,
 panorama > container button
 {
-    color: #d5f6ff;
-    text-shadow: 0 2px #00222b;
+    color: #FFFFFF;
+    text-shadow: 1px 1px #000000;
 }
 
-panorama > container:hover,
+panorama > container:hover
+{
+    background: #D3D1CE;
+    color: #333232;
+    text-shadow: 0 1px white;
+}
+
 panorama > container:hover button
 {
-    background: #00222b;
+    background: #E5E4E3;
+    color: #074E79;
     text-shadow: none;
-
 }
 
 panorama > container button
@@ -40,12 +52,14 @@ panorama > container button
 
 panorama > container button:hover
 {
-    background: #003f50;
+    color: #0295EE;
+    background: #FFFFFF;
 }
 
 panorama > container .title
 {
     font-size: xx-large;
+    margin-left: 8px;
 }
 
 panorama > container .subtitle:before

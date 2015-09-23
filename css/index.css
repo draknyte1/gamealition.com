@@ -1,3 +1,9 @@
+/**
+ * Gamealition CSS theme by Roy Curtis, 2015
+ * Uses colors and gradients from the PBTech phpBB theme
+ * See: https://www.phpbb.com/customise/db/style/pbtech/
+ */
+
 body, html
 {
     width:   100%;
@@ -7,8 +13,8 @@ body, html
 
     font-family: 'Ubuntu Condensed', sans-serif;
     font-size:   20px;
-    background:  #00222b;
-    color:       #d5f6ff;
+    background:  #D3D1CE;
+    color:       #656565;
 }
 
 *
@@ -46,8 +52,10 @@ container
 body > header
 {
     height: 90px;
-    background: #003f50;
+    background: #000;
     margin-bottom: 75px;
+    width: 100%;
+    top: 0;
 }
 
 body > header > container
@@ -66,7 +74,7 @@ body > header menu
 body > header menu > a
 {
     display: inline-block;
-    color: #00ccff;
+    color: #9DBECB;
     font-size: x-large;
     margin-right: 2%;
     text-decoration: none;
@@ -74,7 +82,8 @@ body > header menu > a
 
 body > header menu > a:hover
 {
-    border-bottom: 3px solid #00ccff;
+    border-bottom: 3px solid #FFFFFF;
+    color: #FFFFFF;
 }
 
 body > section
@@ -86,8 +95,9 @@ body > section
 
 body > section > container h1
 {
-    color: #00ccff;
+    color: #333232;
     font-size: xx-large;
+    text-shadow: 0 1px white;
 }
 
 body > section > container p
@@ -103,20 +113,36 @@ body > section > container > section
 
 body > section > container entry
 {
-    display: block;
-    clear: both;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
 }
 
 body > section > container field
 {
-    color: #00ccff;
+    color: #7a7a7a;
 }
 
 body > section > container value
 {
-    float: right;
+    text-align: right;
     font-family: 'Consolas', monospace;
     font-size: medium;
+    flex-grow: 1;
+}
+
+body > section > container entry.important
+{
+    background: #0081b4;
+    background: linear-gradient(rgba(0, 129, 180, 1), rgba(0, 106, 155, 1));
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 4px 8px;
+}
+
+body > section > container entry.important field
+{
+    color: white;
 }
 
 body > section > container menu
@@ -133,14 +159,15 @@ body > section > container menu > a
     text-decoration: none;
     display: inline-block;
     text-transform: uppercase;
-    background: #003f50;
-    color: #00ccff;
+    font-weight: bold;
+    background: #E5E4E3;
+    color: #074E79;
 }
 
 body > section > container menu > a:hover
 {
-    color: ghostwhite;
-    background: #00ccff;
+    color: #0295EE;
+    background: #FFFFFF;
 }
 
 body > section > container menu > a:active
@@ -167,7 +194,7 @@ body > section:last-of-type
 
 body > footer
 {
-    background: #001116 url("../img/footer-bg.png") repeat-x center top;
+    background: #000000 url("../img/footer-bg.png") repeat-x center top;
 
     min-height:  200px;
     padding: 216px 16px 16px;
@@ -175,7 +202,7 @@ body > footer
 
 body > footer > container p
 {
-    color:   #006680;
+    color: #4A4A4A;
     text-align: center;
     font-size:  16px;
     padding: 8px 0;
@@ -183,7 +210,7 @@ body > footer > container p
 
 body > footer > container a
 {
-    color: #00ccff;
+    color: #9DBECB;
     text-decoration: none;
 }
 
