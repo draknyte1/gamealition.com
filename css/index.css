@@ -218,3 +218,32 @@ body > footer > container a:hover
 {
     color: ghostwhite;
 }
+
+/* Temp: 1.9 migration warning 
+ * From http://www.multipetros.gr/posts/728-blink-elements-border-the-css-way/
+ */
+
+.warnbox
+{
+    text-align: center;
+    margin-bottom: 0;
+    padding: 1em;
+    height: 150px;
+}
+
+.blink
+{
+  border: 5px solid red;
+  color: white;
+
+  animation: blink .5s step-end infinite alternate;
+}
+
+.blink a { color: red; }
+.blink a:hover { color: #FFAAAA; }
+
+@keyframes blink
+{
+  0%  { border-color: #000000; } 
+  50% { border-color: #ff0000; } 
+}
