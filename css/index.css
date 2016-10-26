@@ -176,6 +176,16 @@ body > section > container menu > a:active
     color: #00ccff;
 }
 
+body > section > container menu > a.third-party
+{
+    border-left: 4px #732e03 solid;
+}
+
+body > section > container menu > a.third-party:hover
+{
+    border-left-color: #f3a900;
+}
+
 body > section > container::after,
 body > section > container menu > entry::after
 {
