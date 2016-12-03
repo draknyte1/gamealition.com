@@ -6,11 +6,10 @@
 
 body, html
 {
-    width:   100%;
-    height:  100%;
-    margin:  0;
-    padding: 0;
-
+    width:       100%;
+    height:      100%;
+    margin:      0;
+    padding:     0;
     font-family: 'Ubuntu Condensed', sans-serif;
     font-size:   20px;
     background:  #D3D1CE;
@@ -19,25 +18,30 @@ body, html
 
 *
 {
-    padding: 0;
-    margin:  0;
+    padding:    0;
+    margin:     0;
     box-sizing: border-box;
 }
 
 /* Objects */
 
-.col-4 { width: 33.3%; }
-.col-6 { width: 50%;   }
-.col-8 { width: 64%;   }
+.col-4
+{ width: 33.3%; }
+
+.col-6
+{ width: 50%; }
+
+.col-8
+{ width: 64%; }
 
 /* http://stackoverflow.com/a/4407335/3354920 */
 .noselect
 {
     -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    -webkit-user-select:   none;
+    -moz-user-select:      none;
+    -ms-user-select:       none;
+    user-select:           none;
 }
 
 container
@@ -51,11 +55,11 @@ container
 
 body > header
 {
-    height: 90px;
-    background: #000;
+    height:        90px;
+    background:    #000000;
     margin-bottom: 75px;
-    width: 100%;
-    top: 0;
+    width:         100%;
+    top:           0;
 }
 
 body > header > container
@@ -73,30 +77,30 @@ body > header menu
 
 body > header menu > a
 {
-    display: inline-block;
-    color: #9DBECB;
-    font-size: x-large;
-    margin-right: 2%;
+    display:         inline-block;
+    color:           #9DBECB;
+    font-size:       x-large;
+    margin-right:    2%;
     text-decoration: none;
 }
 
 body > header menu > a:hover
 {
     border-bottom: 3px solid #FFFFFF;
-    color: #FFFFFF;
+    color:         #FFFFFF;
 }
 
 body > section
 {
-    clear: both;
-    margin: 16px 0;
+    clear:    both;
+    margin:   16px 0;
     overflow: hidden;
 }
 
 body > section > container h1
 {
-    color: #333232;
-    font-size: xx-large;
+    color:       #333232;
+    font-size:   xx-large;
     text-shadow: 0 1px white;
 }
 
@@ -107,37 +111,37 @@ body > section > container p
 
 body > section > container > section
 {
-    float: left;
+    float:   left;
     padding: 16px;
 }
 
 body > section > container entry
 {
-    display: flex;
-    align-items: center;
+    display:       flex;
+    align-items:   center;
     margin-bottom: 8px;
 }
 
 body > section > container field
 {
-    color: #7a7a7a;
+    color: #7A7A7A;
 }
 
 body > section > container value
 {
-    text-align: right;
+    text-align:  right;
     font-family: 'Consolas', monospace;
-    font-size: medium;
-    flex-grow: 1;
+    font-size:   medium;
+    flex-grow:   1;
 }
 
 body > section > container entry.important
 {
-    background: #0081b4;
+    background: #0081B4;
     background: linear-gradient(rgba(0, 129, 180, 1), rgba(0, 106, 155, 1));
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-    color: white;
-    padding: 4px 8px;
+    color:      white;
+    padding:    4px 8px;
 }
 
 body > section > container entry.important field
@@ -147,54 +151,54 @@ body > section > container entry.important field
 
 body > section > container menu
 {
-    margin: 8px 0;
-    display: flex;
+    margin:    8px 0;
+    display:   flex;
     flex-wrap: wrap;
 }
 
 body > section > container menu > a
 {
-    margin:  4px 8px 4px 0;
-    padding: 8px;
+    margin:          4px 8px 4px 0;
+    padding:         8px;
     text-decoration: none;
-    display: inline-block;
-    text-transform: uppercase;
-    font-weight: bold;
-    background: #E5E4E3;
-    color: #074E79;
+    display:         inline-block;
+    text-transform:  uppercase;
+    font-weight:     bold;
+    background:      #E5E4E3;
+    color:           #074E79;
 }
 
 body > section > container menu > a:hover
 {
-    color: #0295EE;
+    color:      #0295EE;
     background: #FFFFFF;
 }
 
 body > section > container menu > a:active
 {
     background: ghostwhite;
-    color: #00ccff;
+    color:      #00CCFF;
 }
 
 body > section > container menu > a.third-party
 {
-    border-left: 4px #732e03 solid;
+    border-left: 4px #732E03 solid;
 }
 
 body > section > container menu > a.third-party:hover
 {
-    border-left-color: #f3a900;
+    border-left-color: #F3A900;
 }
 
 body > section > container::after,
 body > section > container menu > entry::after
 {
     visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
+    display:    block;
+    font-size:  0;
+    content:    " ";
+    clear:      both;
+    height:     0;
 }
 
 body > section:last-of-type
@@ -205,22 +209,21 @@ body > section:last-of-type
 body > footer
 {
     background: #000000 url("../img/footer-bg.png") repeat-x center top;
-
-    min-height:  200px;
-    padding: 216px 16px 16px;
+    min-height: 200px;
+    padding:    216px 16px 16px;
 }
 
 body > footer > container p
 {
-    color: #4A4A4A;
+    color:      #4A4A4A;
     text-align: center;
     font-size:  16px;
-    padding: 8px 0;
+    padding:    8px 0;
 }
 
 body > footer > container a
 {
-    color: #9DBECB;
+    color:           #9DBECB;
     text-decoration: none;
 }
 
@@ -235,18 +238,17 @@ body > footer > container a:hover
 
 .warnbox
 {
-    text-align: center;
+    text-align:    center;
     margin-bottom: 0;
-    padding: 1em;
-    height: 150px;
+    padding:       1em;
+    height:        150px;
 }
 
 .blink
 {
-  border: 5px solid red;
-  color: white;
-
-  animation: blink .5s step-end infinite alternate;
+    border:    5px solid red;
+    color:     white;
+    animation: blink .5s step-end infinite alternate;
 }
 
 .blink a { color: red; }
@@ -254,6 +256,6 @@ body > footer > container a:hover
 
 @keyframes blink
 {
-  0%  { border-color: #000000; } 
-  50% { border-color: #ff0000; } 
+    0%  { border-color: #000000; }
+    50% { border-color: #FF0000; }
 }
