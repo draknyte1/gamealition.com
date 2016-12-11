@@ -6,11 +6,10 @@
 
 panorama
 {
-    display: flex;
-    height: 400px;
-    background: #FFFFFF;
-    cursor: move;
-
+    display:     flex;
+    height:      400px;
+    background:  #FFFFFF;
+    cursor:      move;
     align-items: flex-end;
 }
 
@@ -22,50 +21,50 @@ panorama pano
 panorama > container,
 panorama > container button
 {
-    color: #FFFFFF;
+    color:       #FFFFFF;
     text-shadow: 1px 1px #000000;
 }
 
 panorama > container:hover
 {
-    background: #D3D1CE;
-    color: #333232;
+    background:  #D3D1CE;
+    color:       #333232;
     text-shadow: 0 1px white;
 }
 
 panorama > container:hover button
 {
-    background: #E5E4E3;
-    color: #074E79;
+    background:  #E5E4E3;
+    color:       #074E79;
     text-shadow: none;
 }
 
 panorama > container button
 {
     background: none;
-    border: none;
-    font-size: xx-large;
-    cursor: pointer;
-    display: inline-block;
-    padding: 8px 16px;
+    border:     none;
+    font-size:  xx-large;
+    cursor:     pointer;
+    display:    inline-block;
+    padding:    8px 16px;
 }
 
 panorama > container button:hover
 {
-    color: #0295EE;
+    color:      #0295EE;
     background: #FFFFFF;
 }
 
 panorama > container .title
 {
-    font-size: xx-large;
+    font-size:   xx-large;
     margin-left: 8px;
 }
 
 panorama > container .subtitle:before
 {
-    content: "by ";
+    content:       "by ";
     padding-right: 4px;
-    font-style: italic;
-    font-size: small;
+    font-style:    italic;
+    font-size:     small;
 }
