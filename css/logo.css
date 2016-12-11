@@ -1,10 +1,9 @@
 logo
 {
-    position:     relative;
-    width:        128px;
-    height:       128px;
-    float:        left;
-    margin-right: 1em;
+    display: block;
+    width:  92px;
+    height: 92px;
+    margin: 0 auto;
 }
 
 logo > h1
@@ -15,7 +14,7 @@ logo > h1
 logo > img
 {
     position: absolute;
-    width:    128px;
+    width:    92px;
 }
 
 logo > img:nth-child(2)
