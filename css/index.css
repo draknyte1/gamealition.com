@@ -24,15 +24,6 @@ body, html
 
 /* Objects */
 
-.col-4
-{ width: 33.3%; }
-
-.col-6
-{ width: 50%; }
-
-.col-8
-{ width: 64%; }
-
 /* http://stackoverflow.com/a/4407335/3354920 */
 .noselect
 {
@@ -43,14 +34,7 @@ body, html
     user-select:           none;
 }
 
-section > container
-{
-    display: block;
-    width:   920px;
-    margin:  0 auto;
-}
-
-/* Page structure */
+/* Header structure */
 
 body > header
 {
@@ -139,11 +123,22 @@ div.nav menu > a:hover
     fill:  white;
 }
 
+/* Body sections */
+
 body > section
 {
-    clear:    both;
-    margin:   16px 0;
-    overflow: hidden;
+    margin:         16px 0;
+    overflow:       hidden;
+    display:        flex;
+    flex-direction: column;
+    align-items:    center;
+}
+
+body > section > container
+{
+    display:     flex;
+    align-items: center;
+    width:       920px;
 }
 
 body > section > container h1
@@ -158,17 +153,22 @@ body > section > container p
     padding-top: 16px;
 }
 
-body > section > container > section
+body > section > container > section.blurb
 {
-    float:   left;
-    padding: 16px;
+    padding:    16px;
+    flex-basis: 60%;
+}
+
+body > section > container > section.links
+{
+    margin-left: 1em;
+    flex-basis:  40%;
 }
 
 body > section > container entry
 {
-    display:       flex;
-    align-items:   center;
-    margin-bottom: 8px;
+    display:     flex;
+    align-items: center;
 }
 
 body > section > container field
@@ -184,7 +184,7 @@ body > section > container value
     flex-grow:   1;
 }
 
-body > section > container entry.important
+body > section > container entry.address
 {
     background: #0081B4;
     background: linear-gradient(rgba(0, 129, 180, 1), rgba(0, 106, 155, 1));
@@ -193,28 +193,29 @@ body > section > container entry.important
     padding:    4px 8px;
 }
 
-body > section > container entry.important field
+body > section > container entry.address field
 {
     color: white;
 }
 
 body > section > container menu
 {
-    margin:    8px 0;
     display:   flex;
     flex-wrap: wrap;
 }
 
 body > section > container menu > a
 {
-    margin:          4px 8px 4px 0;
     padding:         8px;
+    text-align:      center;
     text-decoration: none;
-    display:         inline-block;
     text-transform:  uppercase;
+    display:         inline-block;
     font-weight:     bold;
     background:      #E5E4E3;
     color:           #074E79;
+    flex-basis:      40%;
+    flex-grow:       1;
 }
 
 body > section > container menu > a:hover
@@ -231,12 +232,12 @@ body > section > container menu > a:active
 
 body > section > container menu > a.third-party
 {
-    border-left: 4px #732E03 solid;
+    border-bottom: 3px #732E03 solid;
 }
 
 body > section > container menu > a.third-party:hover
 {
-    border-left-color: #F3A900;
+    border-bottom: 3px #F3A900 solid;
 }
 
 body > section > container::after,
@@ -254,6 +255,54 @@ body > section:last-of-type
 {
     margin-bottom: 0;
 }
+
+/* Survival special CSS */
+
+body > section#Survival > container
+{
+    flex-grow: 1;
+}
+
+body > section#Survival > container > section
+{
+    background:    rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    color:         white;
+    cursor:        default;
+}
+
+body > section#Survival section h1
+{
+    font-weight: 400;
+    text-shadow: none;
+    color:       #C9C9C9;
+}
+
+body > section#Survival > container entry.address
+{
+    background:    none;
+    box-shadow:    none;
+    border-bottom: 1px dotted #C9C9C9;
+}
+
+body > section#Survival > container entry.address > field
+{
+    color: #C9C9C9;
+}
+
+body > section#Survival > container menu > a
+{
+    border-radius: 5px;
+    background:    none;
+    color:         #9DBECB;
+}
+
+body > section#Survival > container menu > a:hover
+{
+    color: white;
+}
+
+/* Footer */
 
 body > footer
 {

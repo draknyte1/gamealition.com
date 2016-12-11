@@ -107,8 +107,8 @@ Panorama.create = function(id)
     element.addEventListener("touchcancel", pano.onInputUpOrOut);
     element.addEventListener("touchmove",   pano.onInputMove);
 
-    jquery.find("button[prev]").click( function() { pano.changeBy(-1); } );
-    jquery.find("button[next]").click( function() { pano.changeBy(1);  } );
+    jquery.find("button.prev").click( function() { pano.changeBy(-1); } );
+    jquery.find("button.next").click( function() { pano.changeBy(1);  } );
 
     pano.update();
 

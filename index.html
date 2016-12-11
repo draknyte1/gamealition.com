@@ -42,6 +42,7 @@
 </head>
 
 <body>
+  <!-- Header - Contains the logo, menus, header background and sloped bars -->
   <header>
     <div class="logo">
       <logo title="We are Gamealition. We host and play games.">
@@ -123,10 +124,27 @@
     </div>
   </header>
 
-  <section id="Survival">
+  <section class="panorama" id="Survival">
+    <slide src="img/survival/pano-1.jpg" width="2145"
+           title="Survival Spawn" subtitle="spin, Rob, et al."></slide>
+    <slide src="img/survival/pano-2.jpg" width="1894"
+           title="Aquadome" subtitle="PosterAnonymous"></slide>
+    <slide src="img/survival/pano-3.jpg" width="2278"
+           title="Rougaroux Plantation" subtitle="swfan85"></slide>
+    <slide src="img/survival/pano-4.jpg" width="1864"
+           title="Seven-Pointed Star" subtitle="Vasha"></slide>
+    <slide src="img/survival/pano-5.jpg" width="1812"
+           title="Mystic Manor" subtitle="CHADK1N"></slide>
+    <slide src="img/survival/pano-6.jpg" width="2463"
+           title="The Underground" subtitle="PatProductions"></slide>
+    <slide src="img/survival/pano-7.jpg" width="1864"
+           title="Oxbridge" subtitle="Robrotheram"></slide>
+    <slide src="img/survival/pano-8.jpg" width="1960"
+           title="Bobtown" subtitle="evilbob"></slide>
+
     <container>
-      <section class="col-6">
-        <h1>Minecraft Survival 1.10.2</h1>
+      <section class="blurb">
+        <h1>Minecraft Survival 1.11</h1>
 
         <p>
           Established in July 2014, our family-friendly semi-vanilla Minecraft survival
@@ -140,9 +158,9 @@
         </p>
       </section>
 
-      <section class="col-6">
-        <entry class="important">
-          <field>Address</field> <value>gamealition.com</value>
+      <section class="links">
+        <entry class="address">
+          <field>Connect to:</field> <value>gamealition.com</value>
         </entry>
 
         <menu>
@@ -151,46 +169,28 @@
           <a href="https://survival.gamealition.com/forums">Sub-Forum</a>
           <a href="https://survival.gamealition.com/changelog">Changelog</a>
           <a href="https://survival.gamealition.com/features">Features</a>
-          <a href="https://survival.gamealition.com/bugs">Known Issues</a>
-          <a href="http://laken.pw/mcshop/" class="third-party" 
+          <a href="https://survival.gamealition.com/bugs">Bugs</a>
+          <a href="http://laken.pw/mcshop/" class="third-party"
              title="MCShop is a third-party website managed by StitchHasAGlitch">
-             Shop Index
+            Shop Index
           </a>
         </menu>
       </section>
     </container>
-  </section>
 
-  <section>
-    <panorama id="pano-survival">
-      <slide src="img/survival/pano-1.jpg" width="2145"
-             title="Survival Spawn" subtitle="spin, Rob, et al."></slide>
-      <slide src="img/survival/pano-2.jpg" width="1894"
-             title="Aquadome" subtitle="PosterAnonymous"></slide>
-      <slide src="img/survival/pano-3.jpg" width="2278"
-             title="Rougaroux Plantation" subtitle="swfan85"></slide>
-      <slide src="img/survival/pano-4.jpg" width="1864"
-             title="Seven-Pointed Star" subtitle="Vasha"></slide>
-      <slide src="img/survival/pano-5.jpg" width="1812"
-             title="Mystic Manor" subtitle="CHADK1N"></slide>
-      <slide src="img/survival/pano-6.jpg" width="2463"
-             title="The Underground" subtitle="PatProductions"></slide>
-      <slide src="img/survival/pano-7.jpg" width="1864"
-             title="Oxbridge" subtitle="Robrotheram"></slide>
-      <slide src="img/survival/pano-8.jpg" width="1960"
-             title="Bobtown" subtitle="evilbob"></slide>
-
-      <container class="noselect">
-        <button prev>&#x2770;</button><button next>&#x2771;</button>
+    <controller class="noselect">
+      <span>
         <span class="title">Title</span>
         <span class="subtitle">Subtitle</span>
-      </container>
-    </panorama>
+      </span>
+      <button class="prev">&#x2770;</button>
+      <button class="next">&#x2771;</button>
+    </controller>
   </section>
 
   <section id="FTB">
     <container>
-      <section class="col-6">
+      <section class="blurb">
         <h1>FTB Infinity 1.7.10</h1>
 
         <p>
@@ -204,9 +204,9 @@
         </p>
       </section>
 
-      <section class="col-6">
-        <entry class="important">
-          <field>Address</field> <value>ftb.gamealition.com</value>
+      <section class="links">
+        <entry class="address">
+          <field>Connect to:</field> <value>ftb.gamealition.com</value>
         </entry>
 
         <menu>
@@ -215,7 +215,7 @@
           <a href="https://ftb.gamealition.com/apply">Apply</a>
           <a href="https://ftb.gamealition.com/forums">Sub-Forum</a>
           <a href="https://ftb.gamealition.com/changelog">Changelog</a>
-          <a href="https://ftb.gamealition.com/bugs">Known Issues</a>
+          <a href="https://ftb.gamealition.com/bugs">Bugs</a>
         </menu>
       </section>
     </container>
@@ -223,12 +223,12 @@
 
   <section id="ARK">
     <container>
-      <section class="col-6">
+      <section class="blurb">
         <h1>ARK: Survival Evolved</h1>
       </section>
 
-      <section class="col-6">
-        <entry class="important">
+      <section class="links">
+        <entry class="address">
           <field>Search term</field> <value>Gamealition</value>
         </entry>
 
@@ -263,8 +263,8 @@
   <script src="js/panorama.js" type="application/javascript"></script>
 
   <script type="application/javascript">
-    Panorama.create("#pano-survival");
-    Panorama.loop();
+    Panorama.create("#Survival");
+    //Panorama.loop();
   </script>
 </scripts>
 </html>
