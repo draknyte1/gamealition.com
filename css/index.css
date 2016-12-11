@@ -141,14 +141,14 @@ body > section > container
     width:       920px;
 }
 
-body > section > container h1
+body > section > container > section h1
 {
     color:       #333232;
     font-size:   xx-large;
     text-shadow: 0 1px white;
 }
 
-body > section > container p
+body > section > container > section p
 {
     padding-top: 16px;
 }
@@ -256,6 +256,38 @@ body > section:last-of-type
     margin-bottom: 0;
 }
 
+/* Intro special CSS */
+
+body > section#Intro > container
+{
+    text-align: justify;
+}
+
+body > section#Intro p
+{
+    font-size:   22px;
+    color:       #878583;
+    text-shadow: 0 1px #EBE9E6;
+}
+
+body > section#Intro .gamealition
+{
+    font-weight: 600;
+    color:       #00A0CD;
+}
+
+body > section#Intro .ornament
+{
+    width:       100px;
+    color:       #AFADAA;
+    text-shadow: 0 1px #EBE9E6;
+}
+
+body > section#Intro .ornament.right
+{
+    text-align: right;
+}
+
 /* Survival special CSS */
 
 body > section#Survival > container
@@ -268,7 +300,7 @@ body > section#Survival > container > section
     background:    rgba(0, 0, 0, 0.75);
     border-radius: 5px;
     color:         white;
-    cursor:        default;
+    cursor:        auto;
 }
 
 body > section#Survival section h1
