@@ -339,8 +339,9 @@ body > section#Survival > container menu > a:hover
 body > footer
 {
     background: #000000 url("../img/footer-bg.png") repeat-x center top;
-    min-height: 200px;
-    padding:    216px 16px 16px;
+    min-height: 150px;
+    padding:    166px 16px 16px;
+    margin-top: 2em;
 }
 
 body > footer > container p
