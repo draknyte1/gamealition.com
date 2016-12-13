@@ -21,60 +21,45 @@
 .panorama > controller
 {
     display:         flex;
-    align-items:     center;
+    align-content:   flex-end;
     justify-content: center;
     flex-wrap:       wrap;
+    flex-grow:       1;
     margin:          0 0 0.5em;
-    width:           640px;
 }
 
 .panorama > controller,
 .panorama > controller button
 {
-    color:       #FFFFFF;
-    text-shadow: 1px 1px #000000;
-}
-
-.panorama > controller:hover
-{
-    text-shadow: none;
-}
-
-.panorama > controller:hover button
-{
-    color:       #9DBECB;
-    background:  rgba(0, 0, 0, 0.75);
-    text-shadow: none;
-}
-
-.panorama > controller:hover button.prev
-{
-    border-radius: 0 0 0 5px;
-}
-
-.panorama > controller:hover button.next
-{
-    border-radius: 0 0 5px 0;
+    color: #FFFFFF;
 }
 
 .panorama > controller button
 {
-    flex-basis: 64px;
-    background: none;
-    border:     none;
-    font-size:  large;
-    cursor:     pointer;
-    display:    block;
-    padding:    1px 16px 2px;
+    background:  rgba(0, 0, 0, 0.75);
+    border:      none;
+    color:       #FFFFFF;
+    cursor:      pointer;
+    display:     block;
+    flex-basis:  64px;
+    font-size:   large;
+    padding:     1px 16px 2px;
+    text-shadow: none;
 }
 
-.panorama > controller button:hover
+.panorama > controller button.prev
 {
-    color: #FFFFFF;
+    border-radius: 0 0 0 5px;
+}
+
+.panorama > controller button.next
+{
+    border-radius: 0 0 5px 0;
 }
 
 .panorama > controller > span
 {
+    background:    rgba(0, 0, 0, 0.75);
     flex-grow:     1;
     flex-basis:    100%;
     text-align:    center;
@@ -82,15 +67,9 @@
     padding:       8px 0;
 }
 
-.panorama > controller:hover > span
-{
-    background: rgba(0, 0, 0, 0.75);
-}
-
 .panorama > controller .title
 {
     font-size:   xx-large;
-    margin-left: 8px;
 }
 
 .panorama > controller .subtitle:before
