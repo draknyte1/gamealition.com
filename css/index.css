@@ -258,6 +258,7 @@ body > section#Intro > container
 
 body > section#Intro p
 {
+    flex-basis:  100%;
     font-size:   22px;
     color:       #878583;
     text-shadow: 0 1px #EBE9E6;
@@ -271,7 +272,7 @@ body > section#Intro .gamealition
 
 body > section#Intro .ornament
 {
-    width:       100px;
+    width:       32px;
     color:       #AFADAA;
     text-shadow: 0 1px #EBE9E6;
 }
