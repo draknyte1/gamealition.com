@@ -55,3 +55,11 @@ div.nav menu.social
     flex-grow:   1;
     margin-left: 0;
 }
+
+/* Panorama */
+
+panorama
+{
+    height: 200px;
+    background-size: auto 200px;
+}

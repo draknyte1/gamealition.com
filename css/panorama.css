@@ -4,8 +4,10 @@
  * See: https://www.phpbb.com/customise/db/style/pbtech/
  */
 
-.panorama
+panorama
 {
+    display:       flex;
+    justify-content: center;
     height:        400px;
     background:    #AEADAC;
     cursor:        move;
@@ -13,28 +15,27 @@
     border-bottom: 5px solid #E8E7E6;
 }
 
-.panorama pano
+panorama pano
 {
     display: none;
 }
 
-.panorama > controller
+panorama > controller
 {
     display:         flex;
     align-content:   flex-end;
     justify-content: center;
     flex-wrap:       wrap;
-    flex-grow:       1;
     margin:          0 0 0.5em;
 }
 
-.panorama > controller,
-.panorama > controller button
+panorama > controller,
+panorama > controller button
 {
     color: #FFFFFF;
 }
 
-.panorama > controller button
+panorama > controller button
 {
     background:  rgba(0, 0, 0, 0.75);
     border:      none;
@@ -47,17 +48,17 @@
     text-shadow: none;
 }
 
-.panorama > controller button.prev
+panorama > controller button.prev
 {
     border-radius: 0 0 0 5px;
 }
 
-.panorama > controller button.next
+panorama > controller button.next
 {
     border-radius: 0 0 5px 0;
 }
 
-.panorama > controller > span
+panorama > controller > span
 {
     background:    rgba(0, 0, 0, 0.75);
     flex-grow:     1;
@@ -67,12 +68,7 @@
     padding:       8px 0;
 }
 
-.panorama > controller .title
-{
-    font-size:   xx-large;
-}
-
-.panorama > controller .subtitle:before
+panorama > controller .subtitle:before
 {
     content:       "by ";
     padding-right: 4px;

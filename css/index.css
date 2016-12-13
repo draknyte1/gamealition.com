@@ -281,52 +281,6 @@ body > section#Intro .ornament.right
     text-align: right;
 }
 
-/* Survival special CSS */
-
-body > section#Survival > container
-{
-    margin-top: 0.5em;
-}
-
-body > section#Survival > container > section
-{
-    background:    rgba(0, 0, 0, 0.75);
-    border-radius: 5px;
-    color:         white;
-    cursor:        auto;
-}
-
-body > section#Survival section h1
-{
-    font-weight: 400;
-    text-shadow: none;
-    color:       #C9C9C9;
-}
-
-body > section#Survival > container entry.address
-{
-    background:    none;
-    box-shadow:    none;
-    border-bottom: 1px dotted #C9C9C9;
-}
-
-body > section#Survival > container entry.address > field
-{
-    color: #C9C9C9;
-}
-
-body > section#Survival > container menu > a
-{
-    border-radius: 5px;
-    background:    none;
-    color:         #9DBECB;
-}
-
-body > section#Survival > container menu > a:hover
-{
-    color: white;
-}
-
 /* Footer */
 
 body > footer

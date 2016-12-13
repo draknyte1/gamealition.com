@@ -138,8 +138,8 @@
     </container>
   </section>
 
-  <!-- Survival - Explains our Minecraft Survival server and contains panorama -->
-  <section id="Survival" class="panorama">
+  <!-- Panorama - Interactive 360 panorama of Survival locations -->
+  <panorama id="pano-survival">
     <slide src="img/survival/pano-1.jpg" width="2145"
            title="Survival Spawn" subtitle="spin, Rob, et al."></slide>
     <slide src="img/survival/pano-2.jpg" width="1894"
@@ -157,6 +157,18 @@
     <slide src="img/survival/pano-8.jpg" width="1960"
            title="Bobtown" subtitle="evilbob"></slide>
 
+    <controller class="noselect">
+      <span>
+        <span class="title">Title</span>
+        <span class="subtitle">Subtitle</span>
+      </span>
+      <button class="prev">&#x2770;</button>
+      <button class="next">&#x2771;</button>
+    </controller>
+  </panorama>
+
+  <!-- Survival - Explains our Minecraft Survival server and contains panorama -->
+  <section id="Survival">
     <container>
       <section class="blurb">
         <h1>Minecraft Survival 1.11</h1>
@@ -192,15 +204,6 @@
         </menu>
       </section>
     </container>
-
-    <controller class="noselect">
-      <span>
-        <span class="title">Title</span>
-        <span class="subtitle">Subtitle</span>
-      </span>
-      <button class="prev">&#x2770;</button>
-      <button class="next">&#x2771;</button>
-    </controller>
   </section>
 
   <!-- FTB - Explains our Feed-the-Beast server with links -->
@@ -288,8 +291,8 @@
   <script src="js/panorama.js" type="application/javascript"></script>
 
   <script type="application/javascript">
-    Panorama.create("#Survival");
     Panorama.loop();
+    Panorama.create("#pano-survival");
   </script>
 </scripts>
 </html>

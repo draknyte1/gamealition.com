@@ -52,13 +52,6 @@ body > section#Survival > container > section.links
     border-radius: 5px 0 0 5px;
 }
 
-/* Panorama */
-
-.panorama > controller .title
-{
-    font-size: 20px;
-}
-
 /* Footer */
 
 body > footer
