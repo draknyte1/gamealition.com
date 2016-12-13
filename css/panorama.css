@@ -7,7 +7,9 @@
 panorama
 {
     display:         flex;
-    justify-content: center;
+    flex-flow:       column;
+    justify-content: flex-end;
+    align-items:     center;
     height:          400px;
     background:      #AEADAC url('../img/survival/pano-1.jpg');
     cursor:          move;
@@ -81,7 +83,6 @@ panorama > controller .subtitle:before
 body.no-js > panorama
 {
     height:          200px;
-    align-items: flex-end;
     background-size: auto 200px;
 }
 
@@ -92,8 +93,8 @@ body.no-js > panorama > controller
 
 body.no-js > panorama > controller > span
 {
-    padding: 4px 8px;
-    border-radius: 5px 5px 0px 0px;
+    padding:       4px 8px;
+    border-radius: 5px 5px 0 0;
 }
 
 body.no-js > panorama > controller button
