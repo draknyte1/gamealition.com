@@ -56,6 +56,12 @@ div.nav menu.social
     margin-left: 0;
 }
 
+div.nav menu > a.icon
+{
+    flex-grow: 1;
+    width:     auto;
+}
+
 /* Panorama */
 
 panorama
