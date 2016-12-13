@@ -82,6 +82,7 @@ panorama > controller .subtitle:before
 
 body.no-js > panorama
 {
+    cursor:          auto;
     height:          200px;
     background-size: auto 200px;
 }
