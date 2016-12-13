@@ -34,23 +34,27 @@ body, html
     user-select:           none;
 }
 
+/* General structure */
+
+body > *
+{
+    width:    100%;
+    overflow: hidden;
+}
+
 /* Header structure */
 
 body > header
 {
-    height:        170px;
-    background:    #000000 url('../img/header-bg.jpg') repeat-x center 0;
-    margin-bottom: 0.2em;
-    width:         100%;
-    top:           0;
+    background: #000000 url('../img/header-bg.jpg') repeat-x center 0;
 }
 
 body > header > div.logo
 {
-    padding: 16px;
-    height:  130px;
-    width:   920px;
-    margin:  0 auto;
+    padding:   16px;
+    height:    130px;
+    max-width: 920px;
+    margin:    0 auto;
 }
 
 body > header > div.nav
@@ -69,7 +73,7 @@ div.nav > container
 {
     display:     flex;
     flex-flow:   row;
-    width:       920px;
+    max-width:   920px;
     margin:      0 auto;
     align-items: center;
 }
@@ -128,7 +132,6 @@ div.nav menu > a:hover
 body > section
 {
     margin:         16px 0;
-    overflow:       hidden;
     display:        flex;
     flex-direction: column;
     align-items:    center;
@@ -138,7 +141,8 @@ body > section > container
 {
     display:     flex;
     align-items: center;
-    width:       920px;
+    width:       100%;
+    max-width:   920px;
 }
 
 body > section > container > section h1
@@ -240,17 +244,6 @@ body > section > container menu > a.third-party:hover
     border-bottom: 3px #F3A900 solid;
 }
 
-body > section > container::after,
-body > section > container menu > entry::after
-{
-    visibility: hidden;
-    display:    block;
-    font-size:  0;
-    content:    " ";
-    clear:      both;
-    height:     0;
-}
-
 body > section:last-of-type
 {
     margin-bottom: 0;
@@ -292,7 +285,7 @@ body > section#Intro .ornament.right
 
 body > section#Survival > container
 {
-    flex-grow: 1;
+    margin-top: 0.5em;
 }
 
 body > section#Survival > container > section
