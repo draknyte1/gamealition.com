@@ -47,7 +47,7 @@ div.nav menu.community,
 div.nav menu.social
 {
     border-radius: 0;
-    flex-basis: 100%;
+    flex-basis:    100%;
 }
 
 div.nav menu.social
@@ -60,6 +60,46 @@ div.nav menu.social
 
 panorama
 {
-    height: 200px;
+    height:          200px;
     background-size: auto 200px;
+}
+
+/* Sections */
+
+body > section
+{
+    margin: 0;
+}
+
+body > section > container
+{
+    flex-wrap: wrap;
+}
+
+body > section > container > section
+{
+    flex-grow: 1;
+}
+
+body > section > container > section.blurb,
+body > section > container > section.links
+{
+    flex-basis: 100%;
+}
+
+body > section > container > section.links
+{
+    margin: 0;
+}
+
+body > section > container menu > a
+{
+    flex-basis: auto;
+}
+
+/* Footer */
+
+body > footer
+{
+    padding: 50px 16px 16px;
 }
