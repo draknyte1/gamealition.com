@@ -9,7 +9,7 @@ panorama
     display:         flex;
     justify-content: center;
     height:          400px;
-    background:      #AEADAC;
+    background:      #AEADAC url('../img/survival/pano-1.jpg');
     cursor:          move;
     border-top:      5px solid #C3C2C1;
     border-bottom:   5px solid #E8E7E6;
@@ -75,3 +75,29 @@ panorama > controller .subtitle:before
     font-style:    italic;
     font-size:     small;
 }
+
+/* Javascript-less overrides */
+
+body.no-js > panorama
+{
+    height:          200px;
+    align-items: flex-end;
+    background-size: auto 200px;
+}
+
+body.no-js > panorama > controller
+{
+    margin: 0;
+}
+
+body.no-js > panorama > controller > span
+{
+    padding: 4px 8px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+body.no-js > panorama > controller button
+{
+    display: none;
+}
+

@@ -7,12 +7,11 @@ var Panorama = {};
 
 Panorama.panos = [];
 
-Panorama.create = function(id)
+Panorama.create = function(selector)
 {
     var pano = {};
 
-    pano.jquery  = $(id);
-    pano.element = pano.jquery[0];
+    pano.element = document.querySelector(selector);
     pano.slides  = Panorama.getSlides(pano.element);
     pano.current = 0;
     pano.grabbed = false;
@@ -34,21 +33,20 @@ Panorama.create = function(id)
         if (pano.scroll < pano.current[1] * -1)
             pano.scroll = 0;
 
-        // Do not use jQuery as this is a fast method
-        pano.element.style.backgroundPosition = pano.scroll + "px 0";
+        pano.element.style.backgroundPosition = pano.scroll + 'px 0';
     };
 
     pano.update = function()
     {
-        var jquery  = pano.jquery,
+        var element = pano.element,
             current = pano.slides[pano.current];
 
-        jquery.css("background-image",    "url(" + current.src + ")");
-        jquery.css("background-repeat",   "repeat-x");
-        jquery.css("background-position", "0px 0px");
+        element.style.backgroundImage    = 'url(' + current.src + ')';
+        element.style.backgroundRepeat   = 'repeat-x';
+        element.style.backgroundPosition = '0px 0px';
 
-        jquery.find(".title").text(current.title);
-        jquery.find(".subtitle").text(current.subtitle);
+        element.querySelector('.title').textContent    = current.title;
+        element.querySelector('.subtitle').textContent = current.subtitle;
     };
 
     pano.changeBy = function(delta)
@@ -94,35 +92,34 @@ Panorama.create = function(id)
         pano.element.style.backgroundPosition = pano.scroll + "px 0";
     };
 
-    var jquery  = pano.jquery,
-        element = pano.element;
+    var element = pano.element;
 
-    element.addEventListener("mousedown",   pano.onInputDown);
-    element.addEventListener("mouseup",     pano.onInputUpOrOut);
-    element.addEventListener("mouseout",    pano.onInputUpOrOut);
-    element.addEventListener("mousemove",   pano.onInputMove);
-    element.addEventListener("touchstart",  pano.onInputDown);
-    element.addEventListener("touchend",    pano.onInputUpOrOut);
-    element.addEventListener("touchleave",  pano.onInputUpOrOut);
-    element.addEventListener("touchcancel", pano.onInputUpOrOut);
-    element.addEventListener("touchmove",   pano.onInputMove);
+    element.addEventListener('mousedown',   pano.onInputDown);
+    element.addEventListener('mouseup',     pano.onInputUpOrOut);
+    element.addEventListener('mouseout',    pano.onInputUpOrOut);
+    element.addEventListener('mousemove',   pano.onInputMove);
+    element.addEventListener('touchstart',  pano.onInputDown);
+    element.addEventListener('touchend',    pano.onInputUpOrOut);
+    element.addEventListener('touchleave',  pano.onInputUpOrOut);
+    element.addEventListener('touchcancel', pano.onInputUpOrOut);
+    element.addEventListener('touchmove',   pano.onInputMove);
 
-    jquery.find("button.prev").click( function() { pano.changeBy(-1); } );
-    jquery.find("button.next").click( function() { pano.changeBy(1);  } );
+    element.querySelector('button.prev').onclick = function() { pano.changeBy(-1); };
+    element.querySelector('button.next').onclick = function() { pano.changeBy(1);  };
 
     pano.update();
 
-    console.log("Created panorama with " + pano.slides.length + " slides");
+    console.log('Created panorama with ' + pano.slides.length + ' slides');
     Panorama.panos.push(pano);
 };
 
 Panorama.getSlides = function(element)
 {
-    var children = element.getElementsByTagName("slide"),
+    var children = element.getElementsByTagName('slide'),
         slides   = [];
 
     if (children.length == 0)
-        throw new Error("No slides defined in panorama");
+        throw new Error('No slides defined in panorama');
 
     for (var i = 0; i < children.length; i++)
     {
@@ -130,12 +127,12 @@ Panorama.getSlides = function(element)
             child = children[i];
 
         if (!child.attributes['src'])
-            throw new Error("No src specified for slide", child);
+            throw new Error('No src specified for slide', child);
         else
             slide.src = child.attributes['src'].value;
 
         if (!child.attributes['width'])
-            throw new Error("No width specified for slide", child);
+            throw new Error('No width specified for slide', child);
         else
             slide.width = child.attributes['width'].value;
 

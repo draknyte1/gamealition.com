@@ -41,7 +41,7 @@
   <meta name="theme-color" content="#00222b">
 </head>
 
-<body>
+<body class="no-js">
   <!-- Header - Contains the logo, menus, header background and sloped bars -->
   <header>
     <div class="logo">
@@ -159,8 +159,8 @@
 
     <controller class="noselect">
       <span>
-        <span class="title">Title</span>
-        <span class="subtitle">Subtitle</span>
+        <span class="title">Survival Spawn</span>
+        <span class="subtitle">spin, Rob, et al.</span>
       </span>
       <button class="prev">&#x2770;</button>
       <button class="next">&#x2771;</button>
@@ -286,11 +286,11 @@
 </body>
 
 <scripts>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
   <script src="js/index.js" type="application/javascript"></script>
   <script src="js/panorama.js" type="application/javascript"></script>
 
   <script type="application/javascript">
+    document.body.className = "";
     Panorama.create("#pano-survival");
     Panorama.loop();
   </script>
