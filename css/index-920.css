@@ -1,13 +1,68 @@
-.col-4 { width: 100%; }
-.col-6 { width: 100%; }
+/**
+ * Gamealition responsive CSS theme by Roy Curtis, 2015
+ * Uses colors and gradients from the PBTech phpBB theme
+ * See: https://www.phpbb.com/customise/db/style/pbtech/
+ */
 
-container
+body, html
 {
-    display: block;
-    width: 100%;
+    font-size: 16px;
 }
 
-container > *
+div.nav menu
 {
-    margin: 0;
+    font-size: 20px;
+}
+
+div.nav menu.community
+{
+    border-radius: 0 5px 5px 0;
+}
+
+div.nav menu.social
+{
+    border-radius: 5px 0 0 5px;
+}
+
+/* Intro section */
+
+body > section#Intro p
+{
+    font-size:     16px;
+    margin:        0 0.5em;
+    padding:       0.5em 0;
+    border-top:    4px double;
+    border-bottom: 4px double;
+}
+
+body > section#Intro .ornament
+{
+    display: none;
+}
+
+/* Survival section */
+
+body > section#Survival > container > section.blurb
+{
+    border-radius: 0 5px 5px 0;
+}
+
+body > section#Survival > container > section.links
+{
+    border-radius: 5px 0 0 5px;
+}
+
+/* Panorama */
+
+.panorama > controller .title
+{
+    font-size: 20px;
+}
+
+/* Footer */
+
+body > footer
+{
+    background-size: 100%;
+    padding: 75px 16px 16px;
 }
