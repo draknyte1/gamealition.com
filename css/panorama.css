@@ -6,13 +6,13 @@
 
 panorama
 {
-    display:       flex;
+    display:         flex;
     justify-content: center;
-    height:        400px;
-    background:    #AEADAC;
-    cursor:        move;
-    border-top:    5px solid #C3C2C1;
-    border-bottom: 5px solid #E8E7E6;
+    height:          400px;
+    background:      #AEADAC;
+    cursor:          move;
+    border-top:      5px solid #C3C2C1;
+    border-bottom:   5px solid #E8E7E6;
 }
 
 panorama pano

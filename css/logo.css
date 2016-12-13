@@ -1,9 +1,13 @@
+/**
+ * Gamealition animated logo CSS by Roy Curtis, 2015
+ */
+
 logo
 {
     display: block;
-    width:  92px;
-    height: 92px;
-    margin: 0 auto;
+    width:   92px;
+    height:  92px;
+    margin:  0 auto;
 }
 
 logo > h1

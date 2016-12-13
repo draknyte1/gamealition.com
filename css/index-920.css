@@ -40,22 +40,10 @@ body > section#Intro .ornament
     display: none;
 }
 
-/* Survival section */
-
-body > section#Survival > container > section.blurb
-{
-    border-radius: 0 5px 5px 0;
-}
-
-body > section#Survival > container > section.links
-{
-    border-radius: 5px 0 0 5px;
-}
-
 /* Footer */
 
 body > footer
 {
     background-size: 100%;
-    padding: 75px 16px 16px;
+    padding:         75px 16px 16px;
 }
