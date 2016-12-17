@@ -24,7 +24,7 @@ logo > img
 logo > img:nth-child(2)
 {
     animation-iteration-count: infinite;
-    animation-duration:        3s;
+    animation-duration:        5s;
     animation-name:            pulse;
     animation-direction:       alternate;
 }
@@ -33,7 +33,7 @@ logo > img:nth-child(2)
 {
     from
     {
-        opacity: 1;
+        opacity: 0.75;
     }
 
     to
