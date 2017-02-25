@@ -167,6 +167,7 @@ body > section > container > section.links
 {
     margin-left: 1em;
     flex-basis:  40%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 body > section > container entry
