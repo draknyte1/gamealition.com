@@ -1,0 +1,49 @@
+.card-row 
+{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.card 
+{
+	width: 400px;
+	background-color: #E5E4E3;
+	margin: 15px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.card .card-container 
+{
+	width: 90%;
+	margin: 10px auto;
+}
+.card .card-container h2 
+{
+	color: #333232;
+	text-shadow: 0 1px white;
+	text-align: center;
+}
+.card .card-container h3 
+{
+	color: #474646;
+	text-shadow: 0 1px white;
+	text-align: center;
+}
+.card .card-container p 
+{
+	font-size: 15px;
+	text-align: justify;
+}
+.card .card-container hr 
+{
+	background-color: #0081B4; 
+	height: 1px; 
+	border: 0;
+	margin: 8px 0;
+}
+.staff-img 
+{
+	filter: grayscale(100%);
+	display: block;
+	margin: 0 auto;
+}
