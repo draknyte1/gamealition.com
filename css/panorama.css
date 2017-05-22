@@ -4,6 +4,7 @@
  * See: https://www.phpbb.com/customise/db/style/pbtech/
  */
 
+/*<editor-fold desc="Panorama elements">*/
 panorama
 {
     display:         flex;
@@ -77,9 +78,9 @@ panorama > controller .subtitle:before
     font-style:    italic;
     font-size:     small;
 }
+/*</editor-fold>*/
 
-/* Javascript-less overrides */
-
+/*<editor-fold desc="No-JS overrides">*/
 body.no-js > panorama
 {
     cursor:          auto;
@@ -102,4 +103,15 @@ body.no-js > panorama > controller button
 {
     display: none;
 }
+/*</editor-fold>*/
 
+/*<editor-fold desc="Responsive design; 640px width">*/
+@media (max-width: 640px)
+{
+    panorama
+    {
+        height:          200px;
+        background-size: auto 200px;
+    }
+}
+/*</editor-fold>*/
