@@ -4,14 +4,18 @@
  * See: https://www.phpbb.com/customise/db/style/pbtech/
  */
 
+/*<editor-fold desc="Panorama elements">*/
 panorama
 {
-    display: flex;
-    height: 400px;
-    background: #FFFFFF;
-    cursor: move;
-
-    align-items: flex-end;
+    display:         flex;
+    flex-flow:       column;
+    justify-content: flex-end;
+    align-items:     center;
+    height:          400px;
+    background:      #AEADAC url('../img/survival/pano-1.jpg');
+    cursor:          move;
+    border-top:      5px solid #C3C2C1;
+    border-bottom:   5px solid #E8E7E6;
 }
 
 panorama pano
@@ -19,53 +23,95 @@ panorama pano
     display: none;
 }
 
-panorama > container,
-panorama > container button
+panorama > controller
+{
+    display:         flex;
+    align-content:   flex-end;
+    justify-content: center;
+    flex-wrap:       wrap;
+    margin:          0 0 0.5em;
+}
+
+panorama > controller,
+panorama > controller button
 {
     color: #FFFFFF;
-    text-shadow: 1px 1px #000000;
 }
 
-panorama > container:hover
+panorama > controller button
 {
-    background: #D3D1CE;
-    color: #333232;
-    text-shadow: 0 1px white;
-}
-
-panorama > container:hover button
-{
-    background: #E5E4E3;
-    color: #074E79;
+    background:  rgba(0, 0, 0, 0.75);
+    border:      none;
+    color:       #FFFFFF;
+    cursor:      pointer;
+    display:     block;
+    flex-basis:  64px;
+    font-size:   large;
+    padding:     1px 16px 2px;
     text-shadow: none;
 }
 
-panorama > container button
+panorama > controller button.prev
 {
-    background: none;
-    border: none;
-    font-size: xx-large;
-    cursor: pointer;
-    display: inline-block;
-    padding: 8px 16px;
+    border-radius: 0 0 0 5px;
 }
 
-panorama > container button:hover
+panorama > controller button.next
 {
-    color: #0295EE;
-    background: #FFFFFF;
+    border-radius: 0 0 5px 0;
 }
 
-panorama > container .title
+panorama > controller > span
 {
-    font-size: xx-large;
-    margin-left: 8px;
+    background:    rgba(0, 0, 0, 0.75);
+    flex-grow:     1;
+    flex-basis:    100%;
+    text-align:    center;
+    border-radius: 5px;
+    padding:       8px 0;
 }
 
-panorama > container .subtitle:before
+panorama > controller .subtitle:before
 {
-    content: "by ";
+    content:       "by ";
     padding-right: 4px;
-    font-style: italic;
-    font-size: small;
+    font-style:    italic;
+    font-size:     small;
 }
+/*</editor-fold>*/
+
+/*<editor-fold desc="No-JS overrides">*/
+body.no-js > panorama
+{
+    cursor:          auto;
+    height:          200px;
+    background-size: auto 200px;
+}
+
+body.no-js > panorama > controller
+{
+    margin: 0;
+}
+
+body.no-js > panorama > controller > span
+{
+    padding:       4px 8px;
+    border-radius: 5px 5px 0 0;
+}
+
+body.no-js > panorama > controller button
+{
+    display: none;
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="Responsive design; 640px width">*/
+@media (max-width: 640px)
+{
+    panorama
+    {
+        height:          200px;
+        background-size: auto 200px;
+    }
+}
+/*</editor-fold>*/

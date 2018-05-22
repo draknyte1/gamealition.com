@@ -1,7 +1,8 @@
-Feel free to use this for your own gaming networks or Minecraft servers.
+This is our no-nonsense front page, which can be found at https://gamealition.com, or
+preview changes at http://gamealition.github.io/gamealition.com/
 
-Please note that this is a multi-license work;
-see `LICENSE.md` and `LICENSE-LOGO.md` for more details.
+Feel free to use this for your own gaming networks or Minecraft servers. Please note that
+this is a multi-license work; see `LICENSE.md` and `LICENSE-LOGO.md` for more details.
 
 This design is responsive and tested for 920px wide or less displays.
 

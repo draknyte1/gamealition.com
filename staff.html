@@ -7,14 +7,18 @@
   <title>Gamealition - We play and host games!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Gamealition Squad">
-  <meta name="description"
-        content="Gaming community with Minecraft and 7 Days to Die servers">
+  <meta name="description" content="Gaming network with Minecraft servers">
 
   <!-- Main style sheets -->
   <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/logo.css" />
   <link rel="stylesheet" href="css/panorama.css" />
+  <link rel="stylesheet" href="css/staff.css" />
   <!-- Fonts -->
   <link rel='stylesheet' href='css/cabinCondensed/cabinCondensed.css' />
+  <!-- Responsive style sheets -->
+  <link rel="stylesheet" media="(max-width: 920px)" href="css/index-920.css" />
+  <link rel="stylesheet" media="(max-width: 640px)" href="css/index-640.css" />
 
   <!-- Courtesy of http://realfavicongenerator.net -->
   <link rel="apple-touch-icon" sizes="57x57" href="img/ico/apple-touch-icon-57x57.png?v=2bb0Xw8klY">
@@ -41,7 +45,7 @@
 <body class="no-js">
   <!-- Header - Contains the logo, menus, header background and sloped bars -->
   <header>
-    <div class="logo">
+    <a href="index.html"><div class="logo">
       <logo title="We are Gamealition. We host and play games.">
         <img alt="Gamealition Logo (diffuse layer)"
              class="diffuse" src="img/logo-diffuse.png"/>
@@ -50,6 +54,7 @@
         <img alt="Gamealition Logo (specular layer)"
              class="specular" src="img/logo-specular.png"/>
       </logo>
+	  </a>
     </div>
 
     <div class="nav">
@@ -65,17 +70,17 @@
             Mumble
           </a>
 
-          <a class="button" rel="community" title="Join our Discord text chat!"
-             href="https://discord.gamealition.com">
-            Discord
+          <a class="button" rel="community" title="Join our IRC text chat!"
+             href="https://irc.gamealition.com">
+            IRC
           </a>
 
           <a class="button" rel="community" title="Check out our videos and downloads!"
              href="https://media.gamealition.com">
             Media
           </a>
-
-          <a class="button" rel="community" title="Meet our team!"
+		  
+		  <a class="button" rel="community" title="Meet our team!"
              href="staff.html">
             Staff
           </a>
@@ -122,254 +127,87 @@
               <path d="M4,6H2V20A2,2 0 0,0 4,22H18V20H4M18,7H15V12.5A2.5,2.5 0 0,1 12.5,15A2.5,2.5 0 0,1 10,12.5A2.5,2.5 0 0,1 12.5,10C13.07,10 13.58,10.19 14,10.5V5H18M20,2H8A2,2 0 0,0 6,4V16A2,2 0 0,0 8,18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2Z" ></path>
             </svg>
           </a>
+
+          <a class="button icon" rel="social" title="Gamealition on Whirled"
+             href="http://www.whirled.com/#groups-d_45208">
+            <svg>
+              <path d="M17.9,17.39C17.64,16.59 16.89,16 16,16H15V13A1,1 0 0,0 14,12H8V10H10A1,1 0 0,0 11,9V7H13A2,2 0 0,0 15,5V4.59C17.93,5.77 20,8.64 20,12C20,14.08 19.2,15.97 17.9,17.39M11,19.93C7.05,19.44 4,16.08 4,12C4,11.38 4.08,10.78 4.21,10.21L9,15V16A2,2 0 0,0 11,18M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" ></path>
+            </svg>
+          </a>
         </menu>
       </container>
     </div>
   </header>
-
-  <!-- Intro - The Gamealition blurb, describing our community -->
-  <section id="Intro">
-    <container>
-      <div class="ornament left">🙤</div>
-      <p>
-        <strong>Who are we?</strong> We are <span class="gamealition">Gamealition</span>.
-        We are an open community of gamers, sysadmins, developers, Lego nerds, redditors,
-        parents, LGBTQers, streamers, trekkies, and wookiees. Our ages range from 12 to 60+
-        and we hail from the US, UK, Canada, Poland, Norway, Kashyyyk, and parts unknown.
-      </p>
-      <div class="ornament right">🙦</div>
-    </container>
+  <section class="staff">
+	<container>
+		<div class="card-row">
+			<div class="card">
+				<div class="card-container">
+					<img src="https://minotar.net/helm/asim0v/150.png" class="staff-img">
+					<h2>asim0v</h2>
+					<h3>Founder</h3>
+					<hr>
+					<p><em>The four horsemen of Gamealition; the original founders. Have final say on any large decisions involving the community; handles security, credentials, payment, accounts, etc.</em></p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-container">
+					<img src="https://minotar.net/helm/PosterAnonymous/150.png" class="staff-img">
+					<h2>PosterAnonymous</h2>
+					<h3>Founder</h3>
+					<hr>
+					<p><em>The four horsemen of Gamealition; the original founders. Have final say on any large decisions involving the community; handles security, credentials, payment, accounts, etc.</em></p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-container">
+					<img src="https://minotar.net/helm/Teh_Rage/150.png" class="staff-img">
+					<h2>Teh_Rage</h2>
+					<h3>Founder</h3>
+					<hr>
+					<p><em>The four horsemen of Gamealition; the original founders. Have final say on any large decisions involving the community; handles security, credentials, payment, accounts, etc.</em></p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-container">
+					<img src="https://minotar.net/helm/swfan85/150.png" class="staff-img">
+					<h2>swfan85</h2>
+					<h3>Administrator</h3>
+					<hr>
+					<p><em>Those entrusted with systems administrative roles on the server, or administrative roles on any game or service hosted by Gamealition.</em></p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-container">
+					<img src="https://minotar.net/helm/rjlan/150.png" class="staff-img">
+					<h2>rjlan</h2>
+					<h3>Administrator</h3>
+					<hr>
+					<p><em>Those entrusted with systems administrative roles on the server, or administrative roles on any game or service hosted by Gamealition.</em></p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-container">
+					<img src="https://minotar.net/helm/Gregor/150.png" class="staff-img">
+					<h2>Gregor</h2>
+					<h3>Moderator</h3>
+					<hr>
+					<p><em>Those entrusted to keep the peace within the community and resolve issues on a personal level. Justriction includes any Gamealition games and services.</em></p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-container">
+					<img src="https://minotar.net/helm/Scrogs63/150.png" class="staff-img">
+					<h2>Scrogs63</h2>
+					<h3>Moderator</h3>
+					<hr>
+					<p><em>Those entrusted to keep the peace within the community and resolve issues on a personal level. Justriction includes any Gamealition games and services.</em></p>
+				</div>
+			</div>
+			
+		</div>
+	</container>
   </section>
-
-  <!-- Panorama - Interactive 360 panorama of Survival locations -->
-  <panorama id="pano-survival">
-    <slide src="img/survival/pano-1.jpg" width="2150"
-           title="Survival Spawn" subtitle="spin, Rob, et al."></slide>
-    <slide src="img/survival/pano-2.jpg" width="1894"
-           title="Aquadome" subtitle="PosterAnonymous"></slide>
-    <slide src="img/survival/pano-3.jpg" width="2196"
-           title="Rougaroux Plantation" subtitle="swfan85"></slide>
-    <slide src="img/survival/pano-4.jpg" width="1548"
-           title="Seven-Pointed Star" subtitle="Vasha"></slide>
-    <slide src="img/survival/pano-6.jpg" width="2463"
-           title="The Underground" subtitle="PatProductions"></slide>
-    <slide src="img/survival/pano-7.jpg" width="1864"
-           title="Oxbridge" subtitle="Robrotheram"></slide>
-    <slide src="img/survival/pano-8.jpg" width="1960"
-           title="Bobtown" subtitle="evilbob"></slide>
-    <slide src="img/survival/pano-9.jpg" width="1663"
-           title="Vikshavn" subtitle="NorthSeaSailing, et al."></slide>
-    <slide src="img/survival/pano-10.jpg" width="1587"
-           title="The Factory" subtitle="helicologo"></slide>
-    <slide src="img/survival/pano-11.jpg" width="1882"
-           title="Mushroom Isle Base" subtitle="tim740"></slide>
-    <slide src="img/survival/pano-12.jpg" width="2429"
-           title="Breadwage Estate" subtitle="MangoFishSocks"></slide>
-
-    <controller class="noselect">
-      <span>
-        <span class="title">Survival Spawn</span>
-        <span class="subtitle">spin, Rob, et al.</span>
-      </span>
-      <button class="prev">&#x2770;</button>
-      <button class="next">&#x2771;</button>
-    </controller>
-  </panorama>
-
-  <!-- Survival - Explains our Minecraft Survival server and contains panorama -->
-  <section id="Survival">
-    <container>
-      <section class="blurb">
-        <h1>Minecraft Survival 1.11.2</h1>
-
-        <p>
-          Established in July 2014, our family-friendly semi-vanilla Minecraft survival
-          community has been going strong with fantastic builds by incredible players,
-          young and old.
-        </p>
-
-        <p>
-          We run a tight ship and a friendly community. We don't spoil the experience with
-          paid ranks, vote begging or complicated plugins.
-        </p>
-      </section>
-
-      <section class="links">
-        <entry class="address">
-          <field>Connect to:</field> <value>gamealition.com</value>
-        </entry>
-
-        <menu>
-          <a title="Rules of our Minecraft Survival server"
-             href="https://survival.gamealition.com/rules">
-            Rules
-          </a>
-
-          <a title="Live map of our Minecraft Survival server, provided by Dynmap"
-             href="https://survival.gamealition.com/dynmap">
-            Live Map
-          </a>
-
-          <a title="Discussion board for our Minecraft Survival server"
-             href="https://survival.gamealition.com/forums">
-            Sub-Forum
-          </a>
-
-          <a title="Running changelog of our Minecraft Survival server"
-             href="https://survival.gamealition.com/changelog">
-            Changelog
-          </a>
-
-          <a title="List of features of our Minecraft Survival server"
-             href="https://survival.gamealition.com/features">
-            Features
-          </a>
-
-          <a title="Known issues and quirks of our Minecraft Survival server"
-             href="https://survival.gamealition.com/bugs">
-            Bugs
-          </a>
-
-          <a title="MCShop is a third-party website managed by StitchHasAGlitch"
-             href="http://stitchhasaglitch.com/mcshopdex" class="third-party">
-            Shop Index
-          </a>
-        </menu>
-      </section>
-    </container>
-  </section>
-
-  <!-- FTB - Explains our Feed-the-Beast server with links -->
-  <section id="FTB">
-    <container>
-      <section class="blurb">
-        <h1>FTB Beyond 1.10.2</h1>
-
-        <p>
-          Established in March 2017, our Feed The Beast Beyond 1.10.2 server replaces our
-          retiring FTB Infinity Lite 1.10.2.
-        </p>
-
-        <p>
-          We keep it well maintained and optimal, whilst still allowing our players to
-          explore machine'n'magic.
-        </p>
-      </section>
-
-      <section class="links">
-        <entry class="address">
-          <field>Connect to:</field> <value>ftb.gamealition.com</value>
-        </entry>
-
-        <menu>
-          <a title="Rules of our Minecraft Feed-the-Beast server"
-             href="https://ftb.gamealition.com/rules">
-            Rules
-          </a>
-
-          <a title="Live map of our Minecraft Feed-the-Beast server, provided by Dynmap"
-             href="https://ftb.gamealition.com/dynmap">
-            Live Map
-          </a>
-
-          <a title="Discussion board for our Minecraft Feed-the-Beast server"
-             href="https://ftb.gamealition.com/forums">
-            Sub-Forum
-          </a>
-
-          <a title="Running changelog of our Minecraft Feed-the-Beast server"
-             href="https://ftb.gamealition.com/changelog">
-            Changelog
-          </a>
-
-          <a title="Apply for entry to our Minecraft Feed-the-Beast server!"
-             href="https://ftb.gamealition.com/apply">
-            Apply
-          </a>
-
-          <a title="Known issues and quirks of our Minecraft Feed-the-Beast server"
-             href="https://ftb.gamealition.com/bugs">
-            Bugs
-          </a>
-        </menu>
-      </section>
-    </container>
-  </section>
-
-  <!-- FTB - Explains our Modern Skyblock server with links -->
-  <section id="ModernSkyblock">
-    <container>
-      <section class="blurb">
-        <h1>Modern Skyblock 2 1.12.1</h1>
-
-        <p>
-          Established in August 2017, our Modern Skyblock 2 server is a much tougher, and
-          much more rewarding, grind.
-        </p>
-
-        <p>
-          This modpack is lighter on resources, and is recommended for players looking for
-          a bigger challenge on FTB!
-        </p>
-      </section>
-
-      <section class="links">
-        <entry class="address">
-          <field>Connect to:</field> <value>skyblock.gamealition.com</value>
-        </entry>
-
-        <menu>
-          <a title="Rules of our Minecraft Modern Skyblock 2 server"
-             href="https://skyblock.gamealition.com/rules">
-            Rules
-          </a>
-
-          <a title="Discussion board for our Minecraft Modern Skyblock 2 3 server"
-             href="https://skyblock.gamealition.com/forums">
-            Sub-Forum
-          </a>
-
-          <a title="Apply for entry to our Minecraft Feed-the-Beast server!"
-             href="https://skyblock.gamealition.com/apply">
-            Apply
-          </a>
-        </menu>
-      </section>
-    </container>
-  </section>
-
-  <!-- 7 Days to Die - Explains the 7 Days to Die server with links -->
-  <section id="7Days">
-    <container>
-      <section class="blurb">
-        <h1>7 Days to Die</h1>
-
-        <p>
-          Established in early 2016, we fund and host the community for Bigmike302's
-          semi-vanilla 7 Days to Die server.
-        </p>
-
-        <p>
-          Run by a super-friendly group who are always willing to teach new players, this
-          7 Days to Die server is great for collaborative survival!
-        </p>
-      </section>
-
-      <section class="links">
-        <entry class="address">
-          <field>Connect to:</field> <value>66.55.158.118:25010</value>
-        </entry>
-
-        <menu>
-          <a title="Discussion board for the 7 Days to Die server"
-             href="https://7days.gamealition.com/forums">
-            Sub-Forum
-          </a>
-        </menu>
-      </section>
-    </container>
-  </section>
-
   <!-- Footer - Contains images of Gamealition minecraft builds and information -->
   <footer>
     <container>
@@ -394,15 +232,4 @@
     </container>
   </footer>
 </body>
-
-<scripts>
-  <script src="js/index.js" type="application/javascript"></script>
-  <script src="js/panorama.js" type="application/javascript"></script>
-
-  <script type="application/javascript">
-    document.body.className = "";
-    Panorama.create("#pano-survival");
-    Panorama.loop();
-  </script>
-</scripts>
 </html>

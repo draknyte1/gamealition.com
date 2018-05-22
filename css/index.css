@@ -4,213 +4,342 @@
  * See: https://www.phpbb.com/customise/db/style/pbtech/
  */
 
+/*<editor-fold desc="CSS reset">*/
 body, html
 {
-    width:   100%;
-    height:  100%;
-    margin:  0;
-    padding: 0;
-
-    font-family: 'Ubuntu Condensed', sans-serif;
+    width:       100%;
+    height:      100%;
+    font-family: 'Cabin Condensed', 'Arial Narrow', sans-serif;
     font-size:   20px;
+    font-weight: 400;
     background:  #D3D1CE;
     color:       #656565;
 }
 
 *
 {
-    padding: 0;
-    margin:  0;
+    padding:    0;
+    margin:     0;
     box-sizing: border-box;
 }
+/*</editor-fold>*/
 
-/* Objects */
-
-.col-4 { width: 33.3%; }
-.col-6 { width: 50%;   }
-.col-8 { width: 64%;   }
-
+/*<editor-fold desc="General classes">*/
 /* http://stackoverflow.com/a/4407335/3354920 */
 .noselect
 {
     -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    -webkit-user-select:   none;
+    -moz-user-select:      none;
+    -ms-user-select:       none;
+    user-select:           none;
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="General structure">*/
+body > *
+{
+    width:    100%;
+    overflow: hidden;
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="Header structure">*/
+body > header
+{
+    background: #000000 url('../img/header-bg.jpg') repeat-x center 0;
 }
 
-container
+body > header > div.logo
+{
+    padding:   16px;
+    height:    130px;
+    max-width: 920px;
+    margin:    0 auto;
+}
+
+body > header > div.nav
+{
+    background: url('../img/header-bar.png') repeat-x center bottom;
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="Animated logo">*/
+logo
 {
     display: block;
-    width:   920px;
+    width:   92px;
+    height:  92px;
     margin:  0 auto;
 }
 
-/* Page structure */
-
-body > header
+logo > h1
 {
-    height: 90px;
-    background: #000;
-    margin-bottom: 75px;
-    width: 100%;
-    top: 0;
+    display: none;
 }
 
-body > header > container
+logo > img
 {
-    padding: 24px;
-    height:  100%;
+    position: absolute;
+    width:    92px;
 }
 
-body > header menu
+logo > img:nth-child(2)
 {
-    list-style: none;
-    margin-top: 35px;
-    text-align: right;
+    animation-iteration-count: infinite;
+    animation-duration:        5s;
+    animation-name:            pulse;
+    animation-direction:       alternate;
 }
 
-body > header menu > a
+@keyframes pulse
 {
-    display: inline-block;
-    color: #9DBECB;
-    font-size: x-large;
-    margin-right: 2%;
+    from { opacity: 0.75; }
+    to   { opacity: 0; }
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="Navigation menu">*/
+div.nav
+{
+    height: 40px;
+}
+
+div.nav > container
+{
+    display:     flex;
+    flex-flow:   row;
+    max-width:   920px;
+    margin:      0 auto;
+    align-items: center;
+}
+
+div.nav menu
+{
+    background:    rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    display:       flex;
+    flex-flow:     row;
+    flex-grow:     1;
+    height:        28px;
+}
+
+div.nav menu.social
+{
+    flex-grow:       0;
+    margin-left:     1em;
+    justify-content: center;
+}
+
+div.nav menu > *
+{
+    flex-grow:  1;
+    padding:    2px;
+    text-align: center;
+}
+
+div.nav menu > a
+{
+    color:           #9DBECB;
+    fill:            #9DBECB;
     text-decoration: none;
 }
 
-body > header menu > a:hover
+div.nav menu > a.icon
 {
-    border-bottom: 3px solid #FFFFFF;
-    color: #FFFFFF;
+    width:     48px;
+    flex-grow: 0;
 }
 
+div.nav menu > a.icon svg
+{
+    width:  24px;
+    height: 24px;
+}
+
+div.nav menu > a:hover
+{
+    color: white;
+    fill:  white;
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="Body sections">*/
 body > section
 {
-    clear: both;
-    margin: 16px 0;
-    overflow: hidden;
+    margin:         16px 0;
+    display:        flex;
+    flex-direction: column;
+    align-items:    center;
 }
 
-body > section > container h1
+body > section > container
 {
-    color: #333232;
-    font-size: xx-large;
+    display:     flex;
+    align-items: center;
+    width:       100%;
+    max-width:   920px;
+}
+
+body > section > container > section h1
+{
+    color:       #333232;
+    font-size:   xx-large;
     text-shadow: 0 1px white;
 }
 
-body > section > container p
+body > section > container > section p
 {
     padding-top: 16px;
 }
 
-body > section > container > section
+body > section > container > section.blurb
 {
-    float: left;
-    padding: 16px;
+    padding:    16px;
+    flex-basis: 60%;
+}
+
+body > section > container > section.links
+{
+    margin-left: 1em;
+    flex-basis:  40%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 body > section > container entry
 {
-    display: flex;
+    display:     flex;
     align-items: center;
-    margin-bottom: 8px;
 }
 
 body > section > container field
 {
-    color: #7a7a7a;
+    color: #7A7A7A;
 }
 
 body > section > container value
 {
-    text-align: right;
+    text-align:  right;
     font-family: 'Consolas', monospace;
-    font-size: medium;
-    flex-grow: 1;
+    font-size:   medium;
+    flex-grow:   1;
 }
 
-body > section > container entry.important
+body > section > container entry.address
 {
-    background: #0081b4;
+    background: #0081B4;
     background: linear-gradient(rgba(0, 129, 180, 1), rgba(0, 106, 155, 1));
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-    color: white;
-    padding: 4px 8px;
+    color:      white;
+    padding:    4px 8px;
 }
 
-body > section > container entry.important field
+body > section > container entry.address field
 {
     color: white;
 }
 
 body > section > container menu
 {
-    margin: 8px 0;
-    display: flex;
+    display:   flex;
     flex-wrap: wrap;
 }
 
 body > section > container menu > a
 {
-    margin:  4px 8px 4px 0;
-    padding: 8px;
+    padding:         8px;
+    text-align:      center;
     text-decoration: none;
-    display: inline-block;
-    text-transform: uppercase;
-    font-weight: bold;
-    background: #E5E4E3;
-    color: #074E79;
+    text-transform:  uppercase;
+    display:         inline-block;
+    font-weight:     bold;
+    background:      #E5E4E3;
+    color:           #074E79;
+    flex-basis:      40%;
+    flex-grow:       1;
 }
 
 body > section > container menu > a:hover
 {
-    color: #0295EE;
+    color:      #0295EE;
     background: #FFFFFF;
 }
 
 body > section > container menu > a:active
 {
     background: ghostwhite;
-    color: #00ccff;
+    color:      #00CCFF;
 }
 
-body > section > container::after,
-body > section > container menu > entry::after
+body > section > container menu > a.third-party
 {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
+    border-bottom: 3px #732E03 solid;
+}
+
+body > section > container menu > a.third-party:hover
+{
+    border-bottom: 3px #F3A900 solid;
 }
 
 body > section:last-of-type
 {
     margin-bottom: 0;
 }
+/*</editor-fold>*/
 
+/*<editor-fold desc="Intro section">*/
+body > section#Intro > container
+{
+    text-align: justify;
+}
+
+body > section#Intro p
+{
+    flex-basis:  100%;
+    font-size:   22px;
+    color:       #878583;
+    text-shadow: 0 1px #EBE9E6;
+}
+
+body > section#Intro .gamealition
+{
+    font-weight: 600;
+    color:       #00A0CD;
+}
+
+body > section#Intro .ornament
+{
+    width:       32px;
+    color:       #AFADAA;
+    text-shadow: 0 1px #EBE9E6;
+}
+
+body > section#Intro .ornament.right
+{
+    text-align: right;
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="Footer section">*/
 body > footer
 {
     background: #000000 url("../img/footer-bg.png") repeat-x center top;
-
-    min-height:  200px;
-    padding: 216px 16px 16px;
+    min-height: 150px;
+    padding:    166px 16px 16px;
+    margin-top: 2em;
 }
 
 body > footer > container p
 {
-    color: #4A4A4A;
+    color:      #4A4A4A;
     text-align: center;
     font-size:  16px;
-    padding: 8px 0;
+    padding:    8px 0;
 }
 
 body > footer > container a
 {
-    color: #9DBECB;
+    color:           #9DBECB;
     text-decoration: none;
 }
 
@@ -218,3 +347,181 @@ body > footer > container a:hover
 {
     color: ghostwhite;
 }
+/*</editor-fold>*/
+
+/*<editor-fold desc="Warning box">*/
+/* http://www.multipetros.gr/posts/728-blink-elements-border-the-css-way/ */
+.warnbox
+{
+    text-align:    center;
+    margin-bottom: 0;
+    padding:       1em;
+    height:        150px;
+}
+
+.blink
+{
+    border:    5px solid red;
+    color:     white;
+    animation: blink .5s step-end infinite alternate;
+}
+
+.blink a
+{ color: red; }
+
+.blink a:hover
+{ color: #FFAAAA; }
+
+@keyframes blink
+{
+    0%
+    { border-color: #000000; }
+    50%
+    { border-color: #FF0000; }
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="Responsive design; 920px width">*/
+@media (max-width: 920px)
+{
+    body, html
+    {
+        font-size: 16px;
+    }
+
+    div.nav menu
+    {
+        font-size: 20px;
+    }
+
+    div.nav menu.community
+    {
+        border-radius: 0 5px 5px 0;
+    }
+
+    div.nav menu.social
+    {
+        border-radius: 5px 0 0 5px;
+    }
+
+    /* Intro section */
+    body > section#Intro p
+    {
+        font-size:     16px;
+        margin:        0 0.5em;
+        padding:       0.5em 0;
+        border-top:    4px double;
+        border-bottom: 4px double;
+    }
+
+    body > section#Intro .ornament
+    {
+        display: none;
+    }
+
+    /* Footer */
+    body > footer
+    {
+        background-size: 100%;
+        padding:         75px 16px 16px;
+    }
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="Responsive design; 640px width">*/
+@media (max-width: 640px)
+{
+    /* Logo */
+    logo
+    {
+        width:  48px;
+        height: 48px;
+    }
+
+    logo > img
+    {
+        width: 48px;
+    }
+
+    body > header > div.logo
+    {
+        height: auto;
+    }
+
+    /* Header */
+    body > header
+    {
+        background: #000000 url('../img/header-bg.jpg') repeat-x center bottom;
+    }
+
+    /* Navigation menu */
+    body > header > div.nav
+    {
+        height:        auto;
+        background:    none;
+        border-bottom: 5px solid #E8E7E6;
+    }
+
+    div.nav > container
+    {
+        flex-wrap: wrap;
+    }
+
+    div.nav menu.community,
+    div.nav menu.social
+    {
+        border-radius: 0;
+        flex-basis:    100%;
+    }
+
+    div.nav menu.social
+    {
+        flex-grow:   1;
+        margin-left: 0;
+    }
+
+    div.nav menu > a.icon
+    {
+        flex-grow: 1;
+        width:     auto;
+    }
+
+    /* Sections */
+    body > section
+    {
+        margin: 0;
+    }
+
+    body > section > container
+    {
+        flex-wrap: wrap;
+    }
+
+    body > section > container > section
+    {
+        flex-grow: 1;
+    }
+
+    body > section > container > section.blurb,
+    body > section > container > section.links
+    {
+        flex-basis: 100%;
+    }
+
+    body > section > container > section.links
+    {
+        margin: 0;
+    }
+
+    body > section > container menu > a
+    {
+        flex-basis: auto;
+    }
+
+    /* Footer */
+    body > footer
+    {
+        padding: 50px 16px 16px;
+    }
+}
+/*</editor-fold>*/
